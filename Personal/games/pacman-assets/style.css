@@ -1,0 +1,13 @@
+* {
+    background-color: rgb(56,56,56);
+}
+
+body {
+    padding: 100px 0; 
+    width: 600px; 
+    margin: auto;
+} 
+
+canvas {
+    vertical-align: top;
+}

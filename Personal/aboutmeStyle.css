@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.3);
+    /*background-color: lightgray;*/
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+}
+
+a {/*This removes the blue underlined hyperlinks*/
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    min-width: 1000px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.document{
+    width = 100%;
+    max-width: 1920px;
+    background-size: 100%;
+    background: url("assets/Header2.JPG") no-repeat top center;
+    background-attachment: fixed;
+}
+
+.info { /*Container for the body of the page*/
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0 200px 200px 200px;
+    display: block;
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.navigation {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    min-width: 850px;
+    z-index: 1000;
+    border-bottom: 1px solid crimson;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 15px 20px;
+    text-decoration: none;
+    color: navy;
+}
+
+.navigation a {
+    color: black;
+}
+
+.navigation a:hover {
+    color: crimson;
+}
+
+#logo {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 80px;
+    padding: 0px 10px;
+    color: crimson;
+}
+
+h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width: auto;
+    padding: 250px 0 25px 0;
+    color: ivory;
+    background-color: rgba(0,0,0,0);
+}
+
+.header {
+    height: 600px;
+    background-color: rgba(0,0,0,0);
+    visibility: visible;
+    text-align: center;
+}
+
+.paragraphs {
+    padding: 50px 0;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 60px;
+    padding: 25px 0;
+}
+
+.classes {
+    padding: 25px 100px;
+    text-align: left;
+}
+
+.semesters {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 60px;
+    padding-top: 50px;
+    color: crimson;
+}
