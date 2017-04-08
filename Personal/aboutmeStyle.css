@@ -1,5 +1,5 @@
 * {
-    color: crimson;
+    color: black;
 }
 
 .document{
@@ -8,7 +8,7 @@
 
 .info {                         /*Container for the body of the page*/
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 0 200px 200px 200px;
+    padding: 100px 200px 200px 200px;
     display: block;
     position: relative;
     width: auto;
@@ -34,18 +34,26 @@
 
 .paragraphs {
     padding: 50px 0;
+    margin: 50px 0;
     text-align: left;
+}
+
+.tiles {
+    border: 1px solid crimson;
+    padding: 25px 80px;
+    margin: 50px 50px;
 }
 
 h2 {
     text-align: left;
     font-family: 'Megrim', cursive;
     font-size: 60px;
-    padding: 25px 0;
+/*    padding: 25px 0;*/
 }
 
 .classes {
-    padding: 25px 100px;
+/*    padding: 25px 100px;*/
+    margin: 20px 0;
     text-align: left;
 }
 

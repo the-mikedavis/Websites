@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid rgba(0, 0, 0, 0.3);     This line displays the blocks of all elements*/
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    /*border: 1px solid rgba(0, 0, 0, 0.3);     /*This line displays the blocks of all elements*/
+    font-family: 'Flamenco', cursive;
+    font-size: 34px;
 }
 
 a {                                             /*This removes the blue underlined hyperlinks*/
