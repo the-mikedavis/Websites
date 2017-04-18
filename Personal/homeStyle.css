@@ -2,16 +2,16 @@
     color: black;
 }
 
-.navigation {
+#navigation {
     border-bottom: 1px solid navy;
     background-color: white;
 }
 
-.navigation a {
+#navigation a {
     color: black;
 }
 
-.navigation a:hover {
+#navigation a:hover {
     color: navy;
 }
 
@@ -19,7 +19,7 @@
     color: navy;
 }
 
-.document{
+html {
     background: url("assets/Header0.JPG") no-repeat center center;
 }
 

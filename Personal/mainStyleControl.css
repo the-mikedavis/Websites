@@ -11,20 +11,20 @@ a {                                             /*This removes the blue underlin
     text-decoration: none;
 }
 
-.body {                                         /*This is the whole body of the article*/
+body {                                         /*This is the whole body of the article*/
     min-width: 1000px;
     padding-right: 150px;
     padding-left: 150px;
 }
 
-.document{                                      /*Encapsulates the whole document*/
+html {                                      /*Encapsulates the whole document*/
     width = 100%;
     max-width: 1920px;
     background-size: 100%;
     background-attachment: fixed;
 }
 
-.navigation {                                   /*The navigation block which sits on the top of the website*/
+#navigation {                                   /*The navigation block which sits on the top of the website*/
     position: fixed;
     left: 0;
     top: 0;
@@ -34,7 +34,7 @@ a {                                             /*This removes the blue underlin
     z-index: 1000;
 }
 
-.navigation li {                                /*Blocks of the singular navigation elements/links*/ 
+#navigation li {                                /*Blocks of the singular navigation elements/links*/ 
     display: inline-block;
     margin: 15px 20px;
     text-decoration: none;
@@ -58,7 +58,7 @@ h1 {                                            /*First header in free space(i.e
     background-color: rgba(0,0,0,0);
 }
 
-.header {                                       /*Clear screen behind the first header*/
+#header {                                       /*Clear screen behind the first header*/
     height: 610px;
     background-color: rgba(0,0,0,0);
     text-align: center;
