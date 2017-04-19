@@ -15,16 +15,16 @@ html {
     text-align: center;
 }
 
-.navigation {
+#navigation {
     border-bottom: 1px solid crimson;
     background-color: white;
 }
 
-.navigation a {
+#navigation a {
     color: black;
 }
 
-.navigation a:hover {
+#navigation a:hover {
     color: crimson;
 }
 
@@ -48,11 +48,9 @@ h2 {
     text-align: left;
     font-family: 'Megrim', cursive;
     font-size: 60px;
-/*    padding: 25px 0;*/
 }
 
 .classes {
-/*    padding: 25px 100px;*/
     margin: 20px 0;
     text-align: left;
 }

@@ -15,16 +15,16 @@ html {
     text-align: center;
 }
 
-.navigation {
+#navigation {
     border-bottom: 1px solid gold;
     background-color: rgb(56,56,56);
 }
 
-.navigation a {
+#navigation a {
     color: ivory;
 }
 
-.navigation a:hover {
+#navigation a:hover {
     color: gold;
 }
 
