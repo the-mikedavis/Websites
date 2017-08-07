@@ -1,0 +1,30 @@
+body {
+    position: relative; 
+    background-color: #333333 !important;
+}
+
+.section {
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+}
+
+#me {
+    background-color: #1E88E5;
+}
+
+#school {
+    background-color: #673ab7;
+}
+
+#programming {
+    background-color: #ff9800;
+}
+
+#section41 {
+    background-color: #00bcd4;
+}
+
+#section42 {
+    background-color: #009688;
+}

@@ -1,0 +1,120 @@
+{
+    "years": [
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "PHY-201",
+                        "grade": "A",
+                        "description": "University Physics I.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "PHY-105",
+                        "grade": "A+",
+                        "description": "College Physics I Lab.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CIM-540",
+                        "grade": "A",
+                        "description": "Creative Coding.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "MTH-309",
+                        "grade": "A",
+                        "description": "Discrete Mathematics",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-120",
+                        "grade": "A+",
+                        "description": "Computer Science I w/ lab.",
+                        "prereq": null
+                    }
+                ],
+                [
+                    {
+                        "name": "PHY-202",
+                        "grade": "A",
+                        "description": "University Physics II.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "PHY-106",
+                        "grade": "A",
+                        "description": "College Physics II Lab",
+                        "prereq": null
+                    },
+                    {
+                        "name": "MTH-224",
+                        "grade": "A",
+                        "description": "Intro to Probability and Statistics",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-220",
+                        "grade": "A+",
+                        "description": "Computer Science II w/ lab.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-314",
+                        "grade": "A+",
+                        "description": "Computer Organization and Architecture",
+                        "prereq": null
+                    }
+                ]
+            ]
+        },
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "CIM-111",
+                        "grade": "-",
+                        "description": "Web Lab.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "PHI-115",
+                        "grade": "-",
+                        "description": "Social Ethics and Issues in Computing.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-317",
+                        "grade": "-",
+                        "description": "Data Structures and Algorithm Analysis",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-322",
+                        "grade": "-",
+                        "description": "Systems Programming (C & UNIX).",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-545",
+                        "grade": "-",
+                        "description": "Intro to Artificial Intelligence.",
+                        "prereq": null
+                    }
+                ]
+            ]
+        },
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "",
+                        "grade": "",
+                        "description": "",
+                        "prereq": null
+                    }
+                ]
+            ]
+        }
+    ]
+}
