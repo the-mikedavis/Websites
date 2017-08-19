@@ -25,7 +25,7 @@
                         "name": "MTH-309",
                         "grade": "A",
                         "description": "Discrete Mathematics",
-                        "prereq": null
+                        "prereq": ["MTH-162"]
                     },
                     {
                         "name": "CSC-120",
@@ -51,19 +51,19 @@
                         "name": "MTH-224",
                         "grade": "A",
                         "description": "Intro to Probability and Statistics",
-                        "prereq": null
+                        "prereq": ["MTH-161"]
                     },
                     {
                         "name": "CSC-220",
                         "grade": "A+",
                         "description": "Computer Science II w/ lab.",
-                        "prereq": null
+                        "prereq": ["CSC-120"]
                     },
                     {
                         "name": "CSC-314",
                         "grade": "A+",
                         "description": "Computer Organization and Architecture",
-                        "prereq": null
+                        "prereq": ["CSC-120"]
                     }
                 ]
             ]
@@ -87,19 +87,51 @@
                         "name": "CSC-317",
                         "grade": "-",
                         "description": "Data Structures and Algorithm Analysis",
-                        "prereq": null
+                        "prereq": ["CSC-220", "MTH-309"]
                     },
                     {
                         "name": "CSC-322",
                         "grade": "-",
                         "description": "Systems Programming (C & UNIX).",
-                        "prereq": null
+                        "prereq": ["CSC-220"]
                     },
                     {
                         "name": "CSC-545",
                         "grade": "-",
                         "description": "Intro to Artificial Intelligence.",
+                        "prereq": ["CSC-220", "MTH-309"]
+                    }
+                ],
+                [
+                    {
+                        "name": "CIM-211",
+                        "grade": "-",
+                        "description": "Interactive Design.",
                         "prereq": null
+                    },
+                    {
+                        "name": "CIM-413",
+                        "grade": "-",
+                        "description": "Mobile App Developement.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-424",
+                        "grade": "-",
+                        "description": "Computer Networks.",
+                        "prereq": ["CSC-322", "CSC-314"]
+                    },
+                    {
+                        "name": "CSC-427",
+                        "grade": "-",
+                        "description": "Theory of Computing.",
+                        "prereq": ["CSC-220", "MTH-309"]
+                    },
+                    {
+                        "name": "CSC-431",
+                        "grade": "-",
+                        "description": "Software Engineering",
+                        "prereq": ["CSC-317"]
                     }
                 ]
             ]
@@ -107,6 +139,62 @@
         {
             "semesters": [
                 [
+                    {
+                        "name": "CIM-535",
+                        "grade": "-",
+                        "description": "Human Centered Design.",
+                        "prereq": ["CIM-211"]
+                    },
+                    {
+                        "name": "CIM-593",
+                        "grade": "-",
+                        "description": "Websites with Dynamic Data",
+                        "prereq": ["CIM-111"]
+                    },
+                    {
+                        "name": "MTH-210",
+                        "grade": "-",
+                        "description": "Intro to Linear Algebra.",
+                        "prereq": ["MTH-161"]
+                    },
+                    {
+                        "name": "CSC-419",
+                        "grade": "-",
+                        "description": "Programming Languages.",
+                        "prereq": ["CSC-317"]
+                    },
+                    {
+                        "name": "CSC-421",
+                        "grade": "-",
+                        "description": "Computer Operating Systems",
+                        "prereq": ["CSC-314", "CSC-322"]
+                    }
+                ],
+                [
+                    {
+                        "name": "CSC-329",
+                        "grade": "-",
+                        "description": "Intro to Game Programming.",
+                        "prereq": ["CSC-220"]
+                    },
+                    {
+                        "name": "CSC-529",
+                        "grade": "-",
+                        "description": "Intro to Computer Graphics.",
+                        "prereq": ["CSC-220", "MTH-210"]
+                    },
+                    {
+                        "name": "JMM-341",
+                        "grade": "-",
+                        "description": "Web Design",
+                        "prereq": null
+                    },
+                    {
+                        "name": "",
+                        "grade": "",
+                        "description": "",
+                        "prereq": null
+                    },
                     {
                         "name": "",
                         "grade": "",

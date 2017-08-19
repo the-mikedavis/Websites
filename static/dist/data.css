@@ -1,0 +1,26 @@
+body {
+    position: relative; 
+    background-color: #333333 !important;
+}
+
+.section {
+    padding-top:50px;
+    height:800px;
+    /*color: #fff;*/
+}
+
+#courses {
+    background-color: #eee;
+}
+
+#languages {
+    background-color: #f46d43;
+}
+
+#onion {
+    background-color: #3288bd;
+}
+
+#thiswebsite {
+    background-color: #5e4fa2;
+}
