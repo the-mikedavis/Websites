@@ -72,9 +72,9 @@
             "semesters": [
                 [
                     {
-                        "name": "CIM-111",
+                        "name": "I.",
                         "grade": "-",
-                        "description": "Web Lab.",
+                        "description": "Independent Study with Professor Zevesuy Rodriguez. Instead of the usual 'study and present something' approach, we worked as a developement team to bring about some ideas we wanted to work on.",
                         "prereq": null
                     },
                     {
