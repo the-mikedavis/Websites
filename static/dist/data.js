@@ -60,7 +60,6 @@ window.addEventListener('load', function () {
             .style('fill', '#bbb')
             .style('stroke', 0)
             .on('click', function (d, i, l, self) {
-                console.log(d.name + ": " + self)
                 //if this is the first link in the chain
                 let dim;
                 if (!self) {
@@ -98,8 +97,8 @@ window.addEventListener('load', function () {
 
                 for (let i = 0; i < d.prereq.length; i++) {
                     let other = semesters.selectAll('rect.classblocks')
-                            .filter(r => d.prereq[i] == r.name)
-                            .node().getBoundingClientRect(),
+                        .filter(r => d.prereq[i] == r.name)
+                        .node().getBoundingClientRect(),
                         me = self.getBoundingClientRect(),
                         off = svg.node().getBoundingClientRect();
                     let x1 = me.left - off.left,
@@ -145,5 +144,9 @@ window.addEventListener('load', function () {
             .attr('y', (d, i) => 100 * i + 65)
             .style('stroke', 0)
             .text(d => d.name)
+
+        window.addEventListener('resize', function () {
+            d3.select('svg#plate').selectAll('*').remove()
+        });
     })
 });
