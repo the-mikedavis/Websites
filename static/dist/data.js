@@ -60,11 +60,30 @@ window.addEventListener('load', function () {
             .style('fill', '#bbb')
             .style('stroke', 0)
             .on('click', function (d, i, l, self) {
-
+                console.log(d.name + ": " + self)
+                //if this is the first link in the chain
+                let dim;
                 if (!self) {
                     //clean the plate
                     plate.selectAll('*').remove();
                     self = this;
+                } else {
+                    let me = self.getBoundingClientRect(),
+                        off = svg.node().getBoundingClientRect();
+                    //save the dimensions of this rect for the arrow head.
+                    dim = {
+                        x: me.left - off.left,
+                        y: me.top - off.top,
+                        w: me.width,
+                        h: me.height
+                    }
+                }
+                if (dim) {
+                    plate.append('polygon')
+                        .attr('fill', '#000')
+                        .attr('stroke-width', 0)
+                        .attr('points', 
+                            `${dim.x+dim.w},${dim.y+(9*dim.h/16)} ${dim.x+(15*dim.w/16)},${dim.y+dim.h/2} ${dim.x+dim.w},${dim.y+(7*dim.h/16)}`);
                 }
 
                 //  if there are no good prereqs, leave
@@ -91,8 +110,13 @@ window.addEventListener('load', function () {
 
                     let path = `M${x1} ${y1} `;
 
-                    if (y1 == y2 && x1 - x2 > 20)
-                        path += 'Q ' + ((x1 + x2) / 2) + ' ' + (me.top - off.top) + ' ';
+                    //ease the curve for classes on same horizontal
+                    if (y1 == y2 && x1 - x2 > 30)
+                        path += 'Q ' + ((x1 + x2) / 2) + ' ' +
+                            (me.top - off.top) + ' ';
+                    else //if (x1 - x2 > 30)//ease curve for far away classes
+                        path += 'Q ' + ((x1 + x2) / 2) + ' ' + y2 + ' ';
+
 
                     path += x2 + ' ' + y2;
 
@@ -101,12 +125,7 @@ window.addEventListener('load', function () {
                         .attr('stroke', '#000')
                         .attr('stroke-width', 2)
                         .attr('d', path)
-/*
-                        .attr('x1', me.left - off.left)
-                        .attr('y1', me.top + me.height / 2 - off.top)
-                        .attr('x2', other.right - off.left)
-                        .attr('y2', other.top + other.height / 2 - off.top)
-                        */
+
                 }
 
                 //make a recursive call to prereq blocks
