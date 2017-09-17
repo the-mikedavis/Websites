@@ -39,13 +39,13 @@
                         "name": "PHY-202",
                         "grade": "A",
                         "description": "University Physics II.",
-                        "prereq": null
+                        "prereq": ["PHY-201"]
                     },
                     {
                         "name": "PHY-106",
                         "grade": "A",
                         "description": "College Physics II Lab",
-                        "prereq": null
+                        "prereq": ["PHY-105"]
                     },
                     {
                         "name": "MTH-224",
@@ -104,15 +104,15 @@
                 ],
                 [
                     {
-                        "name": "CIM-211",
+                        "name": "CIM-593",
                         "grade": "-",
-                        "description": "Interactive Design.",
-                        "prereq": null
+                        "description": "Websites with Dynamic Data",
+                        "prereq": ["CIM-111"]
                     },
                     {
-                        "name": "CIM-413",
+                        "name": "CIM-542",
                         "grade": "-",
-                        "description": "Mobile App Developement.",
+                        "description": "Physical Computing.",
                         "prereq": null
                     },
                     {
@@ -128,10 +128,10 @@
                         "prereq": ["CSC-220", "MTH-309"]
                     },
                     {
-                        "name": "CSC-431",
+                        "name": "GSC-107",
                         "grade": "-",
-                        "description": "Software Engineering",
-                        "prereq": ["CSC-317"]
+                        "description": "Natural Disasters.",
+                        "prereq": null
                     }
                 ]
             ]
@@ -140,16 +140,10 @@
             "semesters": [
                 [
                     {
-                        "name": "CIM-535",
+                        "name": "CIM-211",
                         "grade": "-",
-                        "description": "Human Centered Design.",
-                        "prereq": ["CIM-211"]
-                    },
-                    {
-                        "name": "CIM-593",
-                        "grade": "-",
-                        "description": "Websites with Dynamic Data",
-                        "prereq": ["CIM-111"]
+                        "description": "Interactive Design.",
+                        "prereq": null
                     },
                     {
                         "name": "MTH-210",
@@ -161,6 +155,12 @@
                         "name": "CSC-419",
                         "grade": "-",
                         "description": "Programming Languages.",
+                        "prereq": ["CSC-317"]
+                    },
+                    {
+                        "name": "CSC-431",
+                        "grade": "-",
+                        "description": "Software Engineering",
                         "prereq": ["CSC-317"]
                     },
                     {
@@ -182,18 +182,6 @@
                         "grade": "-",
                         "description": "Intro to Computer Graphics.",
                         "prereq": ["CSC-220", "MTH-210"]
-                    },
-                    {
-                        "name": "JMM-341",
-                        "grade": "-",
-                        "description": "Web Design",
-                        "prereq": null
-                    },
-                    {
-                        "name": "",
-                        "grade": "",
-                        "description": "",
-                        "prereq": null
                     },
                     {
                         "name": "",
