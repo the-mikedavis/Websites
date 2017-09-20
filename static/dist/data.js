@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
                     .attr('y', '0%')
                     .attr('width', '96%')
                     .attr('height', '80%')
-                    .style('fill', '#888');
+                    .style('fill', '#ddd');
 
                 svg.append('text')
                     .text("Year " + (i + 1))
@@ -57,8 +57,9 @@ window.addEventListener('load', function () {
             .attr('x', '5%')
             .attr('y', (d, i) => 100 * i + 25)
             .attr('height', 75)
-            .style('fill', '#bbb')
-            .style('stroke', 0)
+            .style('fill', '#eee')
+            .style('stroke', '#aaa')
+            .style('stroke-weight', 1)
             .on('click', function (d, i, l, self) {
                 //if this is the first link in the chain
                 let dim;
