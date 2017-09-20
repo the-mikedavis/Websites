@@ -11,8 +11,8 @@ nun.configure('templates', {
 app.use(express.static('static'));
 
 app.get('/', function (req, res) {
-    res.send("Hello, World");
-    console.log('GET root');
+    res.redirect('/home');
+    console.log('Redirect to home');
 });
 
 app.get('/home', function (req, res) {
