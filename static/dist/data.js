@@ -113,8 +113,8 @@ window.addEventListener('load', function () {
                     if (y1 == y2 && x1 - x2 > 30)
                         path += 'Q ' + ((x1 + x2) / 2) + ' ' +
                             (me.top - off.top) + ' ';
-                    else //if (x1 - x2 > 30)//ease curve for far away classes
-                        path += 'Q ' + ((x1 + x2) / 2) + ' ' + y2 + ' ';
+                    else //ease curve for far away classes
+                        path += 'Q ' + ((x1 + x2) / 2) + ' ' + (y2) + ' ';
 
 
                     path += x2 + ' ' + y2;

@@ -10,6 +10,11 @@ nun.configure('templates', {
 
 app.use(express.static('static'));
 
+app.get('/', function (req, res) {
+    res.send("Hello, World");
+    console.log('GET root');
+});
+
 app.get('/home', function (req, res) {
     res.render('home.html')
     console.log('GET home.html');
@@ -24,6 +29,6 @@ app.post('*', function(req, res) {
     console.log('POST');
 });
 
-app.listen(8080, function () {
+app.listen(80, function () {
     console.log('Server on-line');
 });
