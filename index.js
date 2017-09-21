@@ -10,27 +10,33 @@ nun.configure('templates', {
 });
 
 app.use(express.static('static'));
+
 app.use(favicon('favicon.ico'));
 
 app.get('/', function (req, res) {
     res.redirect('/home');
-    console.log('Redirect to home');
+    print('Redirect', 'to /home');
 });
 
 app.get('/home', function (req, res) {
     res.render('home.html')
-    console.log('GET home.html');
+    print('GET', 'home.html');
 });
 
 app.get('/data', function (req, res) {
     res.render('data.html')
-    console.log('GET data.html');
+    print('GET', 'data.html');
 });
 
 app.post('*', function(req, res) {
-    console.log('POST');
+    print('POST', '*');
 });
 
 app.listen(80, function () {
-    console.log('Server on-line');
+    print('Server on-line', 'port 80');
 });
+
+function print (actionType, target) {
+    console.log((new Date()).toString() + ' | ' +
+            actionType + ' ' + target);
+}
