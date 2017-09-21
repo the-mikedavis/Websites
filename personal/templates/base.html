@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link href="dist/main.css" rel="stylesheet">
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              rel="stylesheet">
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <nav class="col-xs-12 col-md-3">
+            <a href="/me">Me</a>
+            <h1>Michael Davis</h1>
+            <a href="/projects">Projects</a>
+        </nav>
+        <div id="ground" class="col-xs-0 col-md-2"></div>
+        <div id="glass" class="col-xs-12 col-md-7">
+        {% block body %}{% endblock %}
+        </div>
+    </body>
+</html>

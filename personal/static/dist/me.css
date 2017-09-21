@@ -1,0 +1,18 @@
+.xaxis path {
+    display: none;
+}
+
+text, .small {
+    font-family: "hack", serif;
+    font-size: 10px;
+}
+
+p {
+    font-family: "hack", serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "hack", serif;
+}
+

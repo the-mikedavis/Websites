@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Michael Davis{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script src="dist/home.js" type="text/javascript"></script>
+    <link href="dist/me.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<p><b>TL;DR:</b> I'm a second year Foote Fellow honor student from the 
+University of Miami studying Computer Science. I'm mostly familiar with 
+front-end web design focusing on interaction and data.
+</p>
+<hr>
+<h3>Languages I Know (apprx. hours spent)</h3>
+<svg width="100%"></svg>
+<p class="small">Colors via GitHub</p>
+<hr>
+<p>See some of my pet projects on the <a href="/projects">projects</a> 
+page. For contact, please email my 
+<a target="_blank" href="https://github.com/the-mikedavis">
+    GitHub email</a>. 
+You can also find me on
+<a href="https://www.linkedin.com/in/michael-davis-81b03b141/" 
+    target="_blank">LinkedIn</a>
+and
+<a href="https://stackoverflow.com/users/7232773/m-davis" 
+    target="_blank">StackOverflow</a>.</p>
+{% endblock %}

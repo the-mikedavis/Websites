@@ -1,0 +1,55 @@
+* {
+/*    border: 1px solid black;  */
+}
+
+html {
+    background-color: #222;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+nav {
+    padding-top: 230px;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+    font-family: "hack", serif;
+    font-size: 20px;
+    float: left;
+    width: 25%;
+}
+
+h1 {
+    font-size: 300% !important;
+}
+
+#ground {
+    background-color: #222;
+    height: 100%;
+}
+
+#glass {
+    padding: 100px 8%;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+nav a {
+    font-size: 150%;
+    display: inline-block;
+    padding: 30px 30px;
+}
+
+h1 {
+    padding: 30px 30px;
+}
+
