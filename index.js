@@ -1,6 +1,7 @@
 const express = require('express'),
     url = require('url'),
     nun = require('nunjucks'),
+    favicon = require('serve-favicon'),
     app = express();
 
 nun.configure('templates', {
@@ -9,6 +10,7 @@ nun.configure('templates', {
 });
 
 app.use(express.static('static'));
+app.use(favicon('favicon.ico'));
 
 app.get('/', function (req, res) {
     res.redirect('/home');
