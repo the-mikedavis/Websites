@@ -1,55 +1,111 @@
-* {
-/*    border: 1px solid black;  */
-}
+@media screen and (min-device-width: 800px) {
+    * {
+        /*    border: 1px solid black;  */
+    }
 
-html {
-    background-color: #222;
-    height: 100%;
-}
+    html {
+        background-color: #222;
+        height: 100%;
+    }
 
-body {
-    height: 100%;
-}
+    body {
+        height: 100%;
+    }
 
-nav {
-    padding-top: 230px;
-    background-color: #fff;
-    height: 100%;
-    overflow-y: auto;
-    font-family: "hack", monospace;
-    font-size: 20px;
-    float: left;
-    width: 25%;
-}
+    nav {
+        padding-top: 230px;
+        background-color: #fff;
+        height: 100%;
+        overflow-y: auto;
+        font-family: "hack", monospace;
+        font-size: 20px;
+        float: left;
+        width: 25%;
+    }
 
-h1 {
-    font-size: 300% !important;
-}
+    h1 {
+        font-size: 300% !important;
+    }
 
-#ground {
-    background-color: #222;
-    height: 100%;
-}
+    #ground {
+        background-color: #222;
+        height: 100%;
+    }
 
-#glass {
-    padding: 100px 8%;
-    background-color: #fff;
-    height: 100%;
-    overflow-y: auto;
-}
+    #glass {
+        padding: 100px 8%;
+        background-color: #fff;
+        height: 100%;
+        overflow-y: auto;
+    }
 
-a {
-    text-decoration: none !important;
-    font-size: 20px;
-}
+    a {
+        text-decoration: none !important;
+        font-size: 20px;
+    }
 
-nav a {
-    font-size: 150%;
-    display: block;
-    padding: 30px 30px;
-}
+    nav a {
+        font-size: 150%;
+        display: block;
+        padding: 30px 30px;
+    }
 
-h1 {
-    padding: 30px 30px;
+    h1 {
+        padding: 30px 30px;
+    }
 }
+/*--------*/
 
+@media screen and (max-device-width: 799px) {
+    html {
+        background-color: #222;
+    }
+
+    body {
+        background-color: #222;
+    }
+
+    html, body {
+        min-height: 100%;
+    }
+
+    nav {
+        background-color: #fff;
+        height: 10%;
+        font-family: "hack", monospace;
+        font-size: 1.5em;
+        padding: 5% 0%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        border-bottom: 1px solid black;
+    }
+
+    h1 {
+        font-size: 80% !important;
+        padding: 1%;
+        display: none;
+    }
+
+    #ground {
+    }
+
+    #glass {
+        margin: 10% 5% 20% 5%;
+        padding: 0 5%;
+        background-color: #fff;
+        position: relative;
+    }
+
+    a {
+        text-decoration: none !important;
+        font-size: 100%;
+    }
+
+    nav a {
+        font-size: 100%;
+        display: inline-block;
+        padding: 1%;
+        margin: 0% 5%;
+    }
+}
