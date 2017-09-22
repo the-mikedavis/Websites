@@ -13,30 +13,24 @@ app.use(express.static('static'));
 
 app.use(favicon('favicon.ico'));
 
+//middleware to print the date and action
+app.use(function (req, res, next) {
+    console.log((new Date()).toString(), req.method, req.url);
+    next();
+});
+
 app.get('/', function (req, res) {
     res.redirect('/home');
-    print('Redirect', 'to /home');
 });
 
 app.get('/home', function (req, res) {
     res.render('home.html')
-    print('GET', 'home.html');
 });
 
 app.get('/data', function (req, res) {
     res.render('data.html')
-    print('GET', 'data.html');
-});
-
-app.post('*', function(req, res) {
-    print('POST', '*');
 });
 
 app.listen(80, function () {
-    print('Server on-line', 'port 80');
+    console.log('Server on-line at port 80');
 });
-
-function print (actionType, target) {
-    console.log((new Date()).toString() + ' | ' +
-            actionType + ' ' + target);
-}
