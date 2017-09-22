@@ -1,0 +1,196 @@
+{
+    "years": [
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "PHY-201",
+                        "grade": "A",
+                        "description": "University Physics I.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "PHY-105",
+                        "grade": "A+",
+                        "description": "College Physics I Lab.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CIM-540",
+                        "grade": "A",
+                        "description": "Creative Coding.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "MTH-309",
+                        "grade": "A",
+                        "description": "Discrete Mathematics",
+                        "prereq": ["MTH-162"]
+                    },
+                    {
+                        "name": "CSC-120",
+                        "grade": "A+",
+                        "description": "Computer Science I w/ lab.",
+                        "prereq": null
+                    }
+                ],
+                [
+                    {
+                        "name": "PHY-202",
+                        "grade": "A",
+                        "description": "University Physics II.",
+                        "prereq": ["PHY-201"]
+                    },
+                    {
+                        "name": "PHY-106",
+                        "grade": "A",
+                        "description": "College Physics II Lab",
+                        "prereq": ["PHY-105"]
+                    },
+                    {
+                        "name": "MTH-224",
+                        "grade": "A",
+                        "description": "Intro to Probability and Statistics",
+                        "prereq": ["MTH-161"]
+                    },
+                    {
+                        "name": "CSC-220",
+                        "grade": "A+",
+                        "description": "Computer Science II w/ lab.",
+                        "prereq": ["CSC-120"]
+                    },
+                    {
+                        "name": "CSC-314",
+                        "grade": "A+",
+                        "description": "Computer Organization and Architecture",
+                        "prereq": ["CSC-120"]
+                    }
+                ]
+            ]
+        },
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "I.",
+                        "grade": "-",
+                        "description": "Independent Study with Professor Zevesuy Rodriguez. Instead of the usual 'study and present something' approach, we worked as a developement team to bring about some ideas we wanted to work on.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "PHI-115",
+                        "grade": "-",
+                        "description": "Social Ethics and Issues in Computing.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-317",
+                        "grade": "-",
+                        "description": "Data Structures and Algorithm Analysis",
+                        "prereq": ["CSC-220", "MTH-309"]
+                    },
+                    {
+                        "name": "CSC-322",
+                        "grade": "-",
+                        "description": "Systems Programming (C & UNIX).",
+                        "prereq": ["CSC-220"]
+                    },
+                    {
+                        "name": "CSC-545",
+                        "grade": "-",
+                        "description": "Intro to Artificial Intelligence.",
+                        "prereq": ["CSC-220", "MTH-309"]
+                    }
+                ],
+                [
+                    {
+                        "name": "CIM-593",
+                        "grade": "-",
+                        "description": "Websites with Dynamic Data",
+                        "prereq": ["CIM-111"]
+                    },
+                    {
+                        "name": "CIM-542",
+                        "grade": "-",
+                        "description": "Physical Computing.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "CSC-424",
+                        "grade": "-",
+                        "description": "Computer Networks.",
+                        "prereq": ["CSC-322", "CSC-314"]
+                    },
+                    {
+                        "name": "CSC-427",
+                        "grade": "-",
+                        "description": "Theory of Computing.",
+                        "prereq": ["CSC-220", "MTH-309"]
+                    },
+                    {
+                        "name": "GSC-107",
+                        "grade": "-",
+                        "description": "Natural Disasters.",
+                        "prereq": null
+                    }
+                ]
+            ]
+        },
+        {
+            "semesters": [
+                [
+                    {
+                        "name": "CIM-211",
+                        "grade": "-",
+                        "description": "Interactive Design.",
+                        "prereq": null
+                    },
+                    {
+                        "name": "MTH-210",
+                        "grade": "-",
+                        "description": "Intro to Linear Algebra.",
+                        "prereq": ["MTH-161"]
+                    },
+                    {
+                        "name": "CSC-419",
+                        "grade": "-",
+                        "description": "Programming Languages.",
+                        "prereq": ["CSC-317"]
+                    },
+                    {
+                        "name": "CSC-431",
+                        "grade": "-",
+                        "description": "Software Engineering",
+                        "prereq": ["CSC-317"]
+                    },
+                    {
+                        "name": "CSC-421",
+                        "grade": "-",
+                        "description": "Computer Operating Systems",
+                        "prereq": ["CSC-314", "CSC-322"]
+                    }
+                ],
+                [
+                    {
+                        "name": "CSC-329",
+                        "grade": "-",
+                        "description": "Intro to Game Programming.",
+                        "prereq": ["CSC-220"]
+                    },
+                    {
+                        "name": "CSC-529",
+                        "grade": "-",
+                        "description": "Intro to Computer Graphics.",
+                        "prereq": ["CSC-220", "MTH-210"]
+                    },
+                    {
+                        "name": "",
+                        "grade": "",
+                        "description": "",
+                        "prereq": null
+                    }
+                ]
+            ]
+        }
+    ]
+}
