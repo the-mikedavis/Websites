@@ -127,7 +127,7 @@ window.addEventListener('load', function () {
                 .style('opacity', 0)
                 .on("end", function () {
                     //  Redirect to site B
-                    console.log('redirect')
+                    window.location.href = "/sites/data";
                 })
                 .transition().delay(2001)
                 .remove();

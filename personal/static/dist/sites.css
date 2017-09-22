@@ -1,13 +1,8 @@
-h2 {
+h2, p, a, ol {
     font-family: 'hack', monospace;
 }
 
-p {
-    font-family: 'hack', monospace;
+p, a, ol {
     font-size: 20px;
 }
 
-a {
-    font-family: 'hack', monospace;
-    font-size: 20px;
-}

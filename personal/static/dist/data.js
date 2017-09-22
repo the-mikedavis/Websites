@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
     const svg = d3.select('svg#classes');
 
-    d3.json('dist/progression.json', function (error, data) {
+    d3.json('/dist/progression.json', function (error, data) {
         const years = svg.selectAll('svg.years')
             .data(data.years)
             .enter()

@@ -3,16 +3,16 @@
 }
 
 text, .small {
-    font-family: "hack", serif;
+    font-family: "hack", monospace;
     font-size: 10px;
 }
 
 p {
-    font-family: "hack", serif;
+    font-family: "hack", monospace;
     font-size: 20px;
 }
 
 h3 {
-    font-family: "hack", serif;
+    font-family: "hack", monospace;
 }
 

@@ -16,7 +16,7 @@ nav {
     background-color: #fff;
     height: 100%;
     overflow-y: auto;
-    font-family: "hack", serif;
+    font-family: "hack", monospace;
     font-size: 20px;
     float: left;
     width: 25%;
