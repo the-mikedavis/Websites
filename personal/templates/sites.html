@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sites | Michael Davis{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="dist/sites.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<h2>This Site</h2>
+<br>
+<p>Front-End: D3.js, Bootstrap (CSS only), hack-font.</p>
+<p>Back-End: Node.js, Express, Nunjucks (html templates), serve-favicon.</p>
+<p>This site runs on an old computer that I don't use anymore, which is
+running Elementary OS.
+<hr>
+<h2>These sites</h2>
+<br>
+<p>These sites are little example sites that I threw together to practice
+web design.</p>
+<br>
+<ul>
+    <li><a href="#">Home (an alternate homepage)</a></li>
+    <li><a href="#">Data (some interactive data stuff)</a></li>
+    <li><a href="#">BS (a business)</a></li>
+</ul>
+{% endblock %}

@@ -45,7 +45,7 @@ a {
 
 nav a {
     font-size: 150%;
-    display: inline-block;
+    display: block;
     padding: 30px 30px;
 }
 

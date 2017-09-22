@@ -2,37 +2,42 @@ const express = require('express'),
     url = require('url'),
     nun = require('nunjucks'),
     favicon = require('serve-favicon'),
-    app = express();
+    app = express(),
+    sites = express.Router();
 
 nun.configure('templates', {
     autoescape: true,
     express: app
 });
 
+//  serve the static files
 app.use(express.static('static'));
 
+//  serve the icon
 app.use(favicon('favicon.ico'));
+
+//  middleware to print activity
+app.use(function (req, res, next) {
+    console.log((new Date()).toString(), req.method, req.url);
+    next();
+});
 
 app.get('/', function (req, res) {
     res.redirect('/me');
-    print('Redirect', 'to home');
 });
 
 app.get('/me', function (req, res) {
     res.render('home.html');
-    print('GET', '/me');
 });
 
 app.get('/projects', function (req, res) {
     res.render('projects.html');
-    print('GET', '/projects');
+});
+
+app.get('/sites', function (req, res) {
+    res.render('sites.html');
 });
 
 app.listen(3000, function () {
-    print('Server online', 'at port 3000');
+    console.log('Server online at port 3000');
 });
-
-function print (action, target) {
-    console.log((new Date()).toString() + ' | ' +
-        action + ' ' + target);
-}
