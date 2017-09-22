@@ -1,0 +1,56 @@
+* {
+    /*border: 1px solid black;*/
+}
+
+html {
+    background-color: #222;
+}
+
+body {
+    background-color: #222;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+nav {
+    background-color: #fff;
+    height: 10%;
+    font-family: "hack", monospace;
+    font-size: 1.5em;
+    padding: 5% 0%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-size: 80% !important;
+    padding: 1%;
+    display: none;
+}
+
+#ground {
+}
+
+#glass {
+    margin: 10% 5%;
+    padding: 0 5%;
+    background-color: #fff;
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 100%;
+}
+
+nav a {
+    font-size: 100%;
+    display: inline-block;
+    padding: 1%;
+    margin: 0% 5%;
+}
+
