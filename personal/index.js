@@ -37,6 +37,6 @@ app.get('/projects', function (req, res) {
     res.render('projects.html');
 });
 
-app.listen(3000, function () {
-    console.log('Server online at port 3000');
+app.listen(80, function () {
+    console.log('Server online at port 80');
 });
