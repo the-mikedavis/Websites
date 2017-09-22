@@ -21,7 +21,12 @@ app.use(favicon('favicon.ico'));
 
 //  middleware to print activity
 app.use(function (req, res, next) {
-    console.log((new Date()).toString(), req.method, req.url);
+    var ip = req.headers['x-forwarded-for'] ||
+        req.connection.remoteAddress ||
+        req.socket.remoteAddress ||
+        req.connection.socket.remoteAddress,
+    date = (new Date()).toString();
+    console.log(ip, date, req.method, req.url);
     next();
 });
 
