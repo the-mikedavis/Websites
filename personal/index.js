@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/me', function (req, res) {
-    res.render('home.html');
+    res.render('me.html');
 });
 
 app.get('/projects', function (req, res) {
