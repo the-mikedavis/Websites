@@ -14,8 +14,13 @@ const colors = {
 };
 
 window.addEventListener('load', function () {
-    const svg = d3.select('svg'),
-        margin = {left: 40, right: 20, top: 20, bottom: 30};
+    const svg = d3.select('svg');
+    if (!window.margin)
+        svg.on('click', function() {
+            window.location.href = "/language-graph"
+        });
+
+    const margin = window.margin || {left: 40, right: 20, top: 20, bottom: 30};
 
     let height = svg.node().getBoundingClientRect().width,
         width;

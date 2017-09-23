@@ -38,6 +38,10 @@ app.get('/projects', function (req, res) {
     res.render('projects.html');
 });
 
+app.get('/language-graph', function (req, res) {
+    res.render('languages.html');
+});
+
 app.listen(8080, function () {
     console.log('Server online at port 8080');
 });
