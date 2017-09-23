@@ -1,15 +1,77 @@
-{
-    "Java": 120,
-    "Processing": 10,
-    "C": 2,
-    "Python": 10,
-    "Go": 1,
-    "Ruby": 3,
-    "Brainfuck": 2,
-    "HTML": 70,
-    "JavaScript": 350,
-    "CSS": 30,
-    "Shell": 20,
-    "TeX": 5,
-    "Markdown": 20
-}
+[
+    {
+        "name": "Java",
+        "time": 120,
+        "color": "#b07219",
+        "alias": "Jv"
+    },
+    {
+        "name": "Procesing",
+        "time": 12,
+        "color": "#0096D8",
+        "alias": "Pc"
+    },
+    {
+        "name": "C",
+        "time": 2,
+        "color": "#555555"
+    },
+    {
+        "name": "Python",
+        "time": 10,
+        "color": "#3572A5",
+        "alias": "Py"
+    },
+    {
+        "name": "Go",
+        "time": 1,
+        "color": "#375eab"
+    },
+    {
+        "name": "Ruby",
+        "time": 3,
+        "color": "#701516",
+        "alias": "Rb"
+    },
+    {
+        "name": "Brainfuck",
+        "time": 2,
+        "color": "#2F2530",
+        "alias": "Bf"
+    },
+    {
+        "name": "HTML",
+        "time": 70,
+        "color": "#e34c26",
+        "alias": "HT"
+    },
+    {
+        "name": "JavaScript",
+        "time": 350,
+        "color": "#f1e05a",
+        "alias": "JS"
+    },
+    {
+        "name": "CSS",
+        "time": 30,
+        "color": "#563d7c",
+        "alias": "CS"
+    },
+    {
+        "name": "Shell",
+        "time": 20,
+        "color": "#89e051",
+        "alias": "Sh"
+    },
+    {
+        "name": "TeX",
+        "time": 5,
+        "color": "#3D6117",
+        "alias": "TX"
+    },
+    {
+        "name": "Markdown",
+        "time": 20,
+        "alias": "Md"
+    }
+]
