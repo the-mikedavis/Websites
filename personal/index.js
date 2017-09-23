@@ -31,10 +31,6 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    res.redirect('/me');
-});
-
-app.get('/me', function (req, res) {
     res.render('me.html');
 });
 
