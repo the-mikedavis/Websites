@@ -3,6 +3,7 @@ const express = require('express'),
     url = require('url'),
     nun = require('nunjucks'),
     favicon = require('serve-favicon'),
+    morgan = require('morgan'),
     app = express();
 
 nun.configure('templates', {
@@ -19,16 +20,15 @@ app.use(express.static('static'));
 //  serve the icon
 app.use(favicon('favicon.ico'));
 
-//  middleware to print activity
-app.use(function (req, res, next) {
-    var ip = req.headers['x-forwarded-for'] ||
+//  fix the ip address token in combined
+morgan.token('ip', function (req, res) {
+    return req.headers['x-forwarded-for'] ||
         req.connection.remoteAddress ||
         req.socket.remoteAddress ||
-        req.connection.socket.remoteAddress,
-    date = (new Date()).toString();
-    console.log(ip, date, req.method, req.url);
-    next();
+        req.connection.socket.remoteAddress;
 });
+
+app.use(morgan(':ip - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'));
 
 app.get('/', function (req, res) {
     res.render('me.html');
