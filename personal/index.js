@@ -17,8 +17,8 @@ app.use('/sites', sites);
 //  serve the static files
 app.use(express.static('static'));
 
-//  serve the icon
-app.use(favicon('favicon.ico'));
+//  serve the icon by absolute path
+app.use(favicon(__dirname + '/favicon.ico'));
 
 //  fix the ip address token in combined
 morgan.token('ip', function (req, res) {
