@@ -71,7 +71,7 @@
         font-family: "hack", monospace;
         font-size: 1.5em;
         padding: 5% 0%;
-        position: fixed;
+        position: fixed !important;
         z-index: 99;
         top: 0;
         border-bottom: 1px solid black;
@@ -81,9 +81,6 @@
         font-size: 80% !important;
         padding: 1%;
         display: none;
-    }
-
-    #ground {
     }
 
     #glass {
