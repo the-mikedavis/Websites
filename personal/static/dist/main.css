@@ -73,6 +73,8 @@
         padding: 5% 0%;
         position: fixed !important;
         z-index: 99;
+        left: 0;
+        right: 0;
         top: 0;
         border-bottom: 1px solid black;
     }
@@ -85,7 +87,7 @@
 
     #glass {
         margin: 10% 5% 20% 5%;
-        padding: 0 5%;
+        padding: 50px 5%;
         background-color: #fff;
         position: relative;
     }
