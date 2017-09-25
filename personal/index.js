@@ -1,5 +1,6 @@
 const express = require('express'),
     sites = require('./sites'),
+    projects = require('./projects'),
     url = require('url'),
     nun = require('nunjucks'),
     favicon = require('serve-favicon'),
@@ -13,6 +14,9 @@ nun.configure('templates', {
 
 //  route the example sites
 app.use('/sites', sites);
+
+//  route the project pages
+app.use('/projects', projects);
 
 //  serve the static files
 app.use(express.static('static'));

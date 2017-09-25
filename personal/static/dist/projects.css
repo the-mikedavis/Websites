@@ -1,0 +1,11 @@
+* {
+    font-family: 'hack', monospace;
+}
+
+p {
+    font-size: 20px;
+}
+
+a.large {
+    font-size: 150%;
+}
