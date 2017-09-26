@@ -15,10 +15,11 @@ nun.configure('templates', {
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/traffic');
+
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', function () {
-    console.log('connected');
+    console.log('Connected to the traffic DB.');
 });
 
 const trafficSchema = mongoose.Schema({
@@ -82,10 +83,6 @@ app.use(function (req, res, next) {
 
 app.get('/', function (req, res) {
     res.render('me.html');
-});
-
-app.get('/projects', function (req, res) {
-    res.render('projects.html');
 });
 
 app.get('/language-graph', function (req, res) {
