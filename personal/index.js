@@ -1,11 +1,12 @@
 const express = require('express'),
     sites = require('./sites'),
     projects = require('./projects'),
+    knowledge = require('./knowledge'),
     url = require('url'),
     nun = require('nunjucks'),
     favicon = require('serve-favicon'),
     morgan = require('morgan'),
-    mongoose = require('mongoose'),
+    //mongoose = require('mongoose'),
     app = express();
 
 nun.configure('templates', {
@@ -13,6 +14,11 @@ nun.configure('templates', {
     express: app
 });
 
+//  sort all the knowledge arrays
+for (let arr in knowledge)
+    knowledge[arr] = knowledge[arr].sort();
+
+/*
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/traffic');
 
@@ -33,6 +39,7 @@ const trafficSchema = mongoose.Schema({
     userAgent: String
 }),
     Traffic = mongoose.model('Traffic', trafficSchema);
+*/
 
 //  route the example sites
 app.use('/sites', sites);
@@ -56,6 +63,7 @@ morgan.token('ip', function (req, res) {
 
 app.use(morgan(':ip - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'));
 
+/*
 //  write the traffic to the database
 app.use(function (req, res, next) {
     const ip = req.headers['x-forwarded-for'] ||
@@ -80,6 +88,7 @@ app.use(function (req, res, next) {
 
     next();
 });
+*/
 
 app.get('/', function (req, res) {
     res.render('me.html');
@@ -87,6 +96,10 @@ app.get('/', function (req, res) {
 
 app.get('/language-graph', function (req, res) {
     res.render('languages.html');
+});
+
+app.get('/knowledge', function (req, res) {
+    res.render('knowledge.html', {knowledge: knowledge});
 });
 
 app.listen(8080, function () {

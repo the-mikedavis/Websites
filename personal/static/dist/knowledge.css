@@ -1,0 +1,29 @@
+* {
+    font-family: 'hack', monospace;
+}
+
+p a {
+    font-size: 15px;
+}
+
+hr {
+    border: 0;
+}
+
+#green {
+    border-top: 1px solid #0F0;
+}
+
+#gold {
+    border-top: 1px solid #FF0;
+}
+
+#red {
+    border-top: 1px solid #F00;
+}
+
+li {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
