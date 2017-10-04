@@ -14,10 +14,6 @@ nun.configure('templates', {
     express: app
 });
 
-//  sort all the knowledge arrays
-for (let arr in knowledge)
-    knowledge[arr] = knowledge[arr].sort();
-
 /*
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/traffic');
