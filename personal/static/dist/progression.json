@@ -6,31 +6,31 @@
                     {
                         "name": "PHY-201",
                         "grade": "A",
-                        "description": "University Physics I.",
+                        "description": "University Physics I. Calculus based introductory physics: mechanics, heat, fluids, waves, with applicationsfrom the physical and life sciences.",
                         "prereq": null
                     },
                     {
                         "name": "PHY-105",
                         "grade": "A+",
-                        "description": "College Physics I Lab.",
+                        "description": "College Physics I Lab. Laboritory course for PHY101 and PHY201",
                         "prereq": null
                     },
                     {
                         "name": "CIM-540",
                         "grade": "A",
-                        "description": "Creative Coding.",
+                        "description": "Creative Coding. This course will introduce students to the building blocks of creative coding within the visual and media environment.",
                         "prereq": null
                     },
                     {
                         "name": "MTH-309",
                         "grade": "A",
-                        "description": "Discrete Mathematics",
+                        "description": "Discrete Mathematics. Mathematical methods of Computer Science and Computer Engineering. Mathematical reasoning, sets, relations, functions, Boolean algebra, combinatorics, graphs.",
                         "prereq": ["MTH-162"]
                     },
                     {
                         "name": "CSC-120",
                         "grade": "A+",
-                        "description": "Computer Science I w/ lab.",
+                        "description": "Computer Science I w/ lab. History of computing. Fundamental programming constructs. Algorithms and problem solving. Object-oriented programming. Recursion.",
                         "prereq": null
                     }
                 ],
@@ -38,31 +38,31 @@
                     {
                         "name": "PHY-202",
                         "grade": "A",
-                        "description": "University Physics II.",
+                        "description": "University Physics II. Calculus based introductory physics: electromagnetism, optics, modern physics, with applications from the life sciences.",
                         "prereq": ["PHY-201"]
                     },
                     {
                         "name": "PHY-106",
                         "grade": "A",
-                        "description": "College Physics II Lab",
+                        "description": "College Physics II Lab. Laboritory course for PHY101 and PHY201",
                         "prereq": ["PHY-105"]
                     },
                     {
                         "name": "MTH-224",
                         "grade": "A",
-                        "description": "Intro to Probability and Statistics",
+                        "description": "Intro to Probability and Statistics. Probability distributions, random variables, expectation and variance, point estimation, interval estimation, testing of hypotheses, analysis of variance.",
                         "prereq": ["MTH-161"]
                     },
                     {
                         "name": "CSC-220",
                         "grade": "A+",
-                        "description": "Computer Science II w/ lab.",
+                        "description": "Computer Science II w/ lab. Common APls including list, priority queue, set, and map, and their efficient implementations in an object-oriented language using fundamental data structures. Sorting and other applications of recursion. Combining asymptotic analysis and experiments to extrapolate running times. Using APls in a software project.",
                         "prereq": ["CSC-120"]
                     },
                     {
                         "name": "CSC-314",
                         "grade": "A+",
-                        "description": "Computer Organization and Architecture",
+                        "description": "Computer Organization and Architecture. Digital logic and digital systems. Machine level representation of data. Assembly level machine organization. Memory system organization and architecture. Interfacing and communication. Functional organization. Multiprocessing and alternative architectures.",
                         "prereq": ["CSC-120"]
                     }
                 ]
@@ -80,25 +80,25 @@
                     {
                         "name": "PHI-115",
                         "grade": "-",
-                        "description": "Social Ethics and Issues in Computing.",
+                        "description": "Social Ethics and Issues in Computing. History, social context and methods and tools of analysis. Professional and ethical responsibilities. Intellectual property. Privacy and civil liberties.",
                         "prereq": null
                     },
                     {
                         "name": "CSC-317",
                         "grade": "-",
-                        "description": "Data Structures and Algorithm Analysis",
+                        "description": "Data Structures and Algorithm Analysis. Basic algorithmic analysis. Algorithmic strategies. Fundamental computing algorithms. Distributed algorithms. Cryptographic algorithms. Geometric algorithms.",
                         "prereq": ["CSC-220", "MTH-309"]
                     },
                     {
                         "name": "CSC-322",
                         "grade": "-",
-                        "description": "Systems Programming (C & UNIX).",
+                        "description": "Systems Programming (C & UNIX). C programming: Program structure, core language elements, pointers. System tools for C programming. Programming for UNIX: The system call interface, interfaces to the internet. Scripting.",
                         "prereq": ["CSC-220"]
                     },
                     {
                         "name": "CSC-545",
                         "grade": "-",
-                        "description": "Intro to Artificial Intelligence.",
+                        "description": "Intro to Artificial Intelligence. Search and constraint satisfaction. Knowledge representation and reasoning. Natural language processing. Machine learning and neural networks. Game theory. AI programming.",
                         "prereq": ["CSC-220", "MTH-309"]
                     }
                 ],
@@ -106,31 +106,31 @@
                     {
                         "name": "CIM-593",
                         "grade": "-",
-                        "description": "Websites with Dynamic Data",
+                        "description": "Websites with Dynamic Data. This course teaches data analysis through the development of interactive web applications. The course focuses on communicating through computer programming. Students will learn to build and use databases as a primary source and explore data as content. For this course students will be required to build custom software solutions through web programming languages that utilize third party APIs to interpret, analyze and manipulate data.",
                         "prereq": ["CIM-111"]
                     },
                     {
                         "name": "CIM-542",
                         "grade": "-",
-                        "description": "Physical Computing.",
+                        "description": "Physical Computing. This seminar will examine the differences and opportunities present, between a series of physical computing techniques and rapid prototyping.",
                         "prereq": null
                     },
                     {
                         "name": "CSC-424",
                         "grade": "-",
-                        "description": "Computer Networks.",
+                        "description": "Computer Networks. Introduction to computer networks and network applications. The protocol stack. Routing, switching and bridging technologies. Models of network computing. Internet standards and protocols.",
                         "prereq": ["CSC-322", "CSC-314"]
                     },
                     {
                         "name": "CSC-427",
                         "grade": "-",
-                        "description": "Theory of Computing.",
+                        "description": "Theory of Computing. Sets, relations, and languages. Automata theory. Basic computability theory. Turing machines. The complexity classes P and NP.",
                         "prereq": ["CSC-220", "MTH-309"]
                     },
                     {
                         "name": "GSC-107",
                         "grade": "-",
-                        "description": "Natural Disasters.",
+                        "description": "Natural Disasters. This course will explore the causes, effects and societal responses to disasters. We will look at a variety of natural hazards and related disasters including flooding, volcanoes, landslides, earthquakes, hurricanes, tsunami and drought. Using excerpted segments of \"disaster films\" in conjunction with scientific treatments, we can identify the causes, frequency, consequences, risks, and public perceptions of natural hazards.",
                         "prereq": null
                     }
                 ]
@@ -142,31 +142,31 @@
                     {
                         "name": "CIM-211",
                         "grade": "-",
-                        "description": "Interactive Design.",
+                        "description": "Interactive Design. In this class students will familiarize themselves with the disciplines of user experience (UX) and interaction design (IxD) by understanding and learning how to apply creative and abstract thinking skills to facilitate communication through the design of interfaces that connect information, products, services, and space. Students will be taught to prototype rich interactive experiences and to assess ease of use, utility, perception of the value of the system, and efficiency in performing tasks.",
                         "prereq": null
                     },
                     {
                         "name": "MTH-210",
                         "grade": "-",
-                        "description": "Intro to Linear Algebra.",
+                        "description": "Intro to Linear Algebra. Vectors, matrix algebra, systems of linear equations, and related geometry in Euclidean spaces. Fundamentals of vector spaces, linear transformations, determinants, eigenvalues, and eigenspaces.",
                         "prereq": ["MTH-161"]
                     },
                     {
                         "name": "CSC-419",
                         "grade": "-",
-                        "description": "Programming Languages.",
+                        "description": "Programming Languages. Overview of programming languages. Fundamental issues in language design. Virtual machines. Introduction to language translation. Models of execution control. Declaration, modularity, and storage management. Programming language semantics. Programming paradigms.",
                         "prereq": ["CSC-317"]
                     },
                     {
                         "name": "CSC-431",
                         "grade": "-",
-                        "description": "Software Engineering",
+                        "description": "Software Engineering. Software processes, requirements and specifications, design, validation, evolution. Project management, tools and environments. Foundations of human-computer interaction. Risks and liabilities of computer-based systems. Intellectual property.",
                         "prereq": ["CSC-317"]
                     },
                     {
                         "name": "CSC-421",
                         "grade": "-",
-                        "description": "Computer Operating Systems",
+                        "description": "Computer Operating Systems. Process management. Scheduling and dispatch. Interprocess communication. Memory management. File systems. Device management.Security and protection. System programming for UNIX.",
                         "prereq": ["CSC-314", "CSC-322"]
                     }
                 ],
@@ -174,13 +174,13 @@
                     {
                         "name": "CSC-329",
                         "grade": "-",
-                        "description": "Intro to Game Programming.",
+                        "description": "Intro to Game Programming. Fundamental programming issues in game design: Software design; Version control; Basic graphics; GUI programming. Large-scale game project: Team development of a functional game; Graphics and GUI component; Networking component; Core game engine.",
                         "prereq": ["CSC-220"]
                     },
                     {
                         "name": "CSC-529",
                         "grade": "-",
-                        "description": "Intro to Computer Graphics.",
+                        "description": "Intro to Computer Graphics. Graphic systems. Graphic communication. Geometric modeling (2D and 3D representations). Rendering. Advanced techniques. Display and input devices. Software packages.",
                         "prereq": ["CSC-220", "MTH-210"]
                     },
                     {

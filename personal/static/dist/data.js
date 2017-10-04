@@ -1,5 +1,11 @@
 window.addEventListener('load', function () {
-    const svg = d3.select('svg#classes');
+    const svg = d3.select('svg#classes'),
+        div = d3.select('div#description');
+
+    function populateDiv (name, content) {
+        div.node().innerHTML = `<h2>${name}</h2>
+            <p>${content}</p>`;
+    }
 
     d3.json('/dist/progression.json', function (error, data) {
         const years = svg.selectAll('svg.years')
@@ -67,7 +73,9 @@ window.addEventListener('load', function () {
                     //clean the plate
                     plate.selectAll('*').remove();
                     self = this;
+                    populateDiv(d.name, d.description);
                 } else {
+                    //  NOT the first link in the chain
                     let me = self.getBoundingClientRect(),
                         off = svg.node().getBoundingClientRect();
                     //save the dimensions of this rect for the arrow head.
