@@ -1,0 +1,17 @@
+{% extends "sitebase.html" %}
+{% block title %}Data Representation{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="/dist/data.css" rel="stylesheet"> 
+{% endblock %}
+
+{% block body %}
+<body>
+    <h1>Random Polygon Field Population</h1>
+    <svg id="classes" class="writing" width="80%" height="700px">
+    </svg>
+    <br><br>
+    <p>Refresh the page to get a new field of polygons</p>
+    <script src="/dist/rpfp.js"></script>
+</body>
+{% endblock %}
