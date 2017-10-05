@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
 
     //  on each shape, create the vertices
     for (let c of data) {
-        arr = [];
+        let arr = [];
         for (let i = 0; i < c.sides; i++) {
             let count = 0;
             do {
