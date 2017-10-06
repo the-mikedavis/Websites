@@ -1,0 +1,12 @@
+html, body {
+    background-color: #efefef;
+}
+
+body {
+    padding: 100px 10% 0px 10%;
+}
+
+p {
+    font-size: 20px;
+    margin: 50px 0px;
+}
