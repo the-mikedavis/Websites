@@ -2,16 +2,26 @@
 {% block title %}Data Representation{% endblock %}
 {% block head %}
     {{ super() }}
-    <link href="/dist/data.css" rel="stylesheet"> 
+<style>
+html, body {
+    background-color: #efefef;
+}
+
+body {
+    padding: 100px 10% 0px 10%;
+}
+</style>
 {% endblock %}
 
 {% block body %}
 <body>
-    <h1>Random Polygon Field Population</h1>
-    <svg id="classes" class="writing" width="80%" height="700px">
+    <h1>Random Convex Polygon Field Population</h1>
+    <svg width="100%" height="700px">
     </svg>
     <br><br>
-    <p>Refresh the page to get a new field of polygons</p>
+    <p>Refresh the page to get a new field of polygons. This polygon field is
+    generated using the feint circles, which are placed to not overlap.</p>
+    <script src="https://gist.github.com/the-mikedavis/528aa46f2f3e4b304b308ae0396ca247.js"></script>
     <script src="/dist/rpfp.js"></script>
 </body>
 {% endblock %}
