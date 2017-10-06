@@ -48,10 +48,6 @@ app.get('/knowledge', function (req, res) {
     res.render('knowledge.html', {knowledge: knowledge});
 });
 
-app.get('/rpfp', function (req, res) {
-    res.render('rpfp.html');
-});
-
 app.listen(8080, function () {
     console.log('Server online at port 8080');
 });
