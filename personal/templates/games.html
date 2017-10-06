@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Projects | Michael Davis{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="dist/projects.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<h2><a class="large" href="/games/pacman">
+        Pac Man</a></h2>
+<br>
+<p>Who doesn't know pacman? This is a partially implemented p5 version, which
+does not contain ghost personalities (yes, those are a real thing), or multiple
+lives.
+<hr>
+
+<h2><a class="large" href="/games/doodlejump">
+        Doodlejump</a></h2>
+<br>
+<p>This is a classic game based on physics and was my first outside of class
+p5 pet project.</p>
+<hr>
+{% endblock %}

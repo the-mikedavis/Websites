@@ -2,6 +2,7 @@ const express = require('express'),
     sites = require('./sites'),
     projects = require('./projects'),
     knowledge = require('./knowledge'),
+    games = require('./games'),
     url = require('url'),
     nun = require('nunjucks'),
     favicon = require('serve-favicon'),
@@ -19,6 +20,9 @@ app.use('/sites', sites);
 
 //  route the project pages
 app.use('/projects', projects);
+
+//  route to the p5 games
+app.use('/games', games);
 
 //  serve the static files
 app.use(express.static('static'));

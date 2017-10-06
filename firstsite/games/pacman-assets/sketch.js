@@ -10,7 +10,7 @@ var biteSpeed;
 var cnvs;
 var frameStart = 0;
 var mapImage;
-var mapFile = 'pacman-assets/myMap.jpg';
+var mapFile = '/dist/pacman/myMap.jpg';
 var pacCounter = 0;
 var gameOver = false;
 var winningString = "";
