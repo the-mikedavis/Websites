@@ -4,12 +4,16 @@ window.addEventListener('load', function () {
         width = box.width,
         height = box.height;
 
-    const data = new Array(40);
+    let count = ri(8, 50);
+    const data = new Array(count);
 
-    data[0] = new Body(ri(0, width), ri(0, height), ri(width/50, width/10));
+    //  adjust the min, max radii for the aspect ratio and circle count
+    const maxr = (width * width) / (height * count),
+        minr = width / 50;
 
+    data[0] = new Body(ri(5, width - 5), ri(5, height - 5),
+        ri(minr, maxr));
 
-    //  this is linear average time, 0(n^2) worst case
     let r = 20;
     for (let i = 1; i < data.length; i++) {
         //  create a toddler circle which is not contained by a circle
@@ -17,12 +21,12 @@ window.addEventListener('load', function () {
         //  This is a strict while loop. If the data does not satisfy
         //  the conditions, the map cannot be made
         do {
-            data[i] = new Body(ri(0, width), ri(0, height), r);
+            data[i] = new Body(ri(5, width - 5), ri(5, height - 5), r);
         } while (isContained(data, i));
         // expand this toddler circle out as far as possible, but still
         // randomly
-        data[i].radius = ri(width/10, width/20);
-        for (let rad = width/10; rad > r && isContained(data, i); rad -= 10)
+        data[i].radius = ri(3*maxr/4, maxr);
+        for (let rad = data[i].radius; rad >= r && isContained(data, i); rad -= 5)
             data[i].radius = rad;
     }
 
@@ -33,20 +37,30 @@ window.addEventListener('load', function () {
         for (let i = 0; i < c.sides; i++) {
             let count = 0;
             do {
+                //  generate a random point on the circumference
                 let angle = Math.random() * Math.PI * 2,
                     x = Math.cos(angle) * c.radius,
                     y = Math.sin(angle) * c.radius;
+
                 c.vertices[i] = {
                     x : Math.floor(x) + c.x,
                     y : Math.floor(y) + c.y
                 };
+
+                //  for proximity to other vertices testing
                 arr[i] = new Vertex(x, y, c.radius);
+
+                //  if you can't have your cake and eat it, just eat it.
+                //  just make sure the point is on the map if you can't fit it.
                 if (count++ > 100 &&
                     !pointIsntOnMap(c.vertices[i].x, c.vertices[i].y))
-                    break;
+                        break;
+            //  repeat if the point is too close to others or off the map
             } while (pointIsntOnMap(c.vertices[i].x, c.vertices[i].y) || 
                 isContained(arr, i));
         }
+
+        //  attach the angle, by which these are sorted
         let start;
         for (let e of c.vertices) {
             let ang = Math.atan2(e.y - c.y, e.x - c.x);
@@ -56,13 +70,11 @@ window.addEventListener('load', function () {
                 ang += Math.PI * 2;
             e.angle = ang;
         }
+
         //  sort into clockwise order for rendering
-        c.vertices.sort(function (a, b) {
-            return a.angle - b.angle;
-        });
+        c.vertices.sort((a, b) => a.angle - b.angle);
     }
 
-    console.log(data)
     render(data);
 
     function isContained (data, index) {
@@ -106,9 +118,6 @@ window.addEventListener('load', function () {
                 }
             });
     }
-
-    window.render = render;
-    window.data = data;
 });
 
 function ri (min, max) {
@@ -138,8 +147,6 @@ class Body {
     constructor (x, y, r) {
         this.x = x;
         this.y = y;
-        this.vx = 0;
-        this.vy = 0;
         this.radius = r;
         this.sides = ri(3,6);
         this.vertices = [];
