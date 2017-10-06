@@ -1,0 +1,3 @@
+[submodule "personal/static/dist/blackjack"]
+	path = personal/static/dist/blackjack
+	url = git@github.com:the-mikedavis/blackjack.git

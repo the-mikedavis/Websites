@@ -10,3 +10,8 @@ canvas {
 * {
     font-family: 'hack', monospace;
 }
+
+div#pane {
+    background-color: #efefef;
+    padding: 25px 10%;
+}
