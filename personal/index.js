@@ -1,6 +1,7 @@
 const express = require('express'),
     sites = require('./sites'),
     projects = require('./projects'),
+    bs = require('./business'),
     knowledge = require('./knowledge'),
     games = require('./games'),
     url = require('url'),
@@ -23,6 +24,9 @@ app.use('/projects', projects);
 
 //  route to the p5 games
 app.use('/games', games);
+
+//  route the business example site
+app.use('/bs', bs);
 
 //  serve the static files
 app.use(express.static('static'));
