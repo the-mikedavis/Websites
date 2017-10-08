@@ -13,8 +13,9 @@ if (getWidth() > 800) {
             .on('mousemove', function () {
                 clearTimeout(timer);
                 let coor = d3.mouse(this),
+                    scrollNode = document.scrollingElement || document.documentElement,
                     x = coor[0],
-                    y = coor[1];
+                    y = coor[1] - scrollNode.scrollTop;
                 timer = setTimeout(function(){timeout(x, y)}, 1000);
             });
 
@@ -84,12 +85,10 @@ if (getWidth() > 800) {
                     points[i] = new Vertex(Math.cos(angle) * radius + x,
                         Math.sin(angle) * radius + y, radius);
 
-                    if (count++ > 10 &&
-                        !pointIsntOnMap(points[i].x, points[i].y))
+                    if (count++ > 20)
                         break;
                     //  repeat if the point is too close to others or off the map
-                } while (pointIsntOnMap(points[i].x, points[i].y) || 
-                    isContained(points, i));
+                } while (isContained(points, i));
             }
             let start;
             for (let e of points) {
