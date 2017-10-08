@@ -1,0 +1,29 @@
+{% extends "sitebase.html" %}
+{% block title %}Data Representation{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="/dist/data.css" rel="stylesheet"> 
+{% endblock %}
+{% block body %}
+<body>
+    <h2>My Course Load</h2>
+    <svg id="classes" class="writing" width="100%" height="700px">
+    </svg>
+    <div id="description"></div>
+    <p>This basic table shows my past, current, and expected course
+    load for my three years at the University of Miami. Click on any
+    course to see its prerequisites and description.</p>
+<script src="/dist/data.js"></script>
+<script src="/dist/backbutton.js"></script>
+</body>
+{% endblock %}
+<link rel="apple-touch-icon" sizes="180x180" href="static/dist/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/dist/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/dist/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/dist/favicons/manifest.json">
+<link rel="mask-icon" href="static/dist/favicons/safari-pinned-tab.svg" color="#da532c">
+<link rel="shortcut icon" href="static/dist/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="static/dist/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/dist/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">

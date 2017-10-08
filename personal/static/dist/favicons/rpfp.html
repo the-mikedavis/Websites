@@ -1,0 +1,34 @@
+{% extends "sitebase.html" %}
+{% block title %}Data Representation{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="/dist/rpfp.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<body>
+    <h1>Random Convex Polygon Field Population</h1>
+    <svg width="100%" height="700px">
+    </svg>
+    <br><br>
+    <p>Refresh the page to get a new field of polygons.</p>
+    <p>Why generate a field like this? This was for my AI class. An assignment
+    was to navigate a field of random polygons with A* search. You could just
+    hard code a random looking map, but I wanted to go further.</p>
+    <p>This polygon field is
+    generated using the feint circles, which are placed to not overlap. Below
+    is the code which runs on this very page. Check it out!</p>
+    <script src="https://gist.github.com/the-mikedavis/528aa46f2f3e4b304b308ae0396ca247.js"></script>
+    <script src="/dist/rpfp.js"></script>
+    <script src="/dist/backbutton.js"></script>
+</body>
+{% endblock %}
+<link rel="apple-touch-icon" sizes="180x180" href="static/dist/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/dist/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/dist/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/dist/favicons/manifest.json">
+<link rel="mask-icon" href="static/dist/favicons/safari-pinned-tab.svg" color="#da532c">
+<link rel="shortcut icon" href="static/dist/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="static/dist/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/dist/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Knowledge | Michael Davis{% endblock %}
+{% block head %}
+{{ super() }}
+<link href="/dist/knowledge.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<h1>Things I Know</h1>
+<hr id="green">
+<ul>
+    {% for item in knowledge.know %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<br>
+<h1>Things I Want to Know</h1>
+<hr id="gold">
+<ul>
+    {% for item in knowledge.want %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<br>
+<h1>Things I Probably Won't Know</h1>
+<hr id="red">
+<p>This list is not exhaustive. Also, I may very well end up learning some of
+these if the conditions are right.</p>
+<ul>
+    {% for item in knowledge.not %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+<br>
+<p>Are all of these items hard-coded in? No way! I use
+<a target="_blank" href="https://mozilla.github.io/nunjucks/templating.html#for">Nunjucks
+templating</a>.</p>
+{% endblock %}
+<link rel="apple-touch-icon" sizes="180x180" href="static/dist/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/dist/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/dist/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/dist/favicons/manifest.json">
+<link rel="mask-icon" href="static/dist/favicons/safari-pinned-tab.svg" color="#da532c">
+<link rel="shortcut icon" href="static/dist/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="static/dist/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/dist/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">

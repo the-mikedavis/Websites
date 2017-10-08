@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Projects | Michael Davis{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="dist/projects.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<h2><a class="large" href="/games/pacman">
+        Pac Man</a></h2>
+<br>
+<p>Who doesn't know pacman? This is a partially implemented p5 version, which
+does not contain ghost personalities (yes, those are a real thing), or multiple
+lives.
+<hr>
+</p><h2><a class="large" href="/games/doodlejump">Doodlejump</a></h2>
+<br>
+<p>This is a classic game based on physics and was my first outside of class
+p5 pet project.</p>
+<hr>
+<h2><a class="large" href="/games/blackjack">Blackjack</a></h2>
+<br>
+<p>Watch a simulation of the stock market as told through a game of blackjack.
+This was my final project for Intro to Creative Coding.</p>
+<hr>
+{% endblock %}
+<link rel="apple-touch-icon" sizes="180x180" href="static/dist/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/dist/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/dist/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/dist/favicons/manifest.json">
+<link rel="mask-icon" href="static/dist/favicons/safari-pinned-tab.svg" color="#da532c">
+<link rel="shortcut icon" href="static/dist/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="static/dist/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/dist/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">

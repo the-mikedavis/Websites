@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Projects | Michael Davis{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="dist/projects.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<h2><a class="large" href="/projects/attendance">
+        Headless Stack Overflow Daily Attendance</a></h2>
+<br>
+<p>Stack Overflow awards a gold badge for checking into the site for 100 days in
+a row. I wrote a simple script which uses the phantom.js headless browser to
+log in and read the progress of the badge. Then I set this script up to run every
+day.</p>
+<hr>
+<h2><a class="large" href="/projects/rpfp">
+        Randomly Generate a Field of Convex Polygons</a></h2>
+<br>
+<p>Sounds easy, but it's a bit harder than it looks, especially to make it look good.
+This was a part of a class assignment turned wild.</p>
+<hr>
+<h2><a class="large" href="/projects/home-server">
+        Making a Home Server from an Old Computer</a></h2>
+<br>
+<p>I had an old computer and GoDaddy Shared Hosting. You can infer what happened.
+</p>
+<hr>
+<h2><a class="large" href="/projects/webdb">
+        Use MongoDB in Express Middleware to Store Node.js Website Traffic</a></h2>
+<br>
+<p>While I don't really need to store any information about the site, I wanted
+some MongoDB experience. This middleware allows me to log your info to my
+database!</p>
+<hr>
+<h2><a class="large" href="/games">p5 Games</a></h2>
+<br>
+<p>Games in p5.js. This is a purely javascript engine which runs applications
+similar to what you might find with a flash player.</p>
+<hr>
+{% endblock %}
+<link rel="apple-touch-icon" sizes="180x180" href="static/dist/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/dist/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/dist/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/dist/favicons/manifest.json">
+<link rel="mask-icon" href="static/dist/favicons/safari-pinned-tab.svg" color="#da532c">
+<link rel="shortcut icon" href="static/dist/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="static/dist/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="static/dist/favicons/browserconfig.xml">
+<meta name="theme-color" content="#333333">

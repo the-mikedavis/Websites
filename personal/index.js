@@ -32,7 +32,7 @@ app.use('/bs', bs);
 app.use(express.static('static'));
 
 //  serve the icon by absolute path
-app.use(favicon(__dirname + '/favicon.ico'));
+//app.use(favicon(__dirname + '/favicon.ico'));
 
 //  fix the ip address token in combined
 morgan.token('ip', function (req, res) {
