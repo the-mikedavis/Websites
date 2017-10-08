@@ -10,7 +10,7 @@ var biteSpeed;
 var cnvs;
 var frameStart = 0;
 var mapImage;
-var mapFile = '/dist/pacman/myMap.jpg';
+var mapFile = '/dist/pacman/myMap.JPG';
 var pacCounter = 0;
 var gameOver = false;
 var winningString = "";
@@ -77,7 +77,6 @@ function draw() {
 	drawDots();		//orange dots
 	textAlign(LEFT);
 	text(pacCounter, 20, 20);	//how many dots you've eaten
-	//console.log(pacman.pacX+", "+pacman.pacY);
 	var ghostKiller = null;
 	for (count = 0; count < ghosts.length; count++){
 		if (ghosts[count].pacX == pacman.pacX && ghosts[count].pacY == pacman.pacY){//you've lost
@@ -181,7 +180,6 @@ function Ghost(x, y, gColor, count){
 					targetX = cornersX[this.ghostNo];
 					targetY = cornersY[this.ghostNo];
 				}
-				console.log(targetX+", "+targetY);
 				if (pacMap[this.pacY][this.pacX-1] > 0 &&
 						this.previousPath != 1){	//left
 					distance = dist(this.pacX-1, this.pacY, targetX, targetY);
@@ -193,7 +191,6 @@ function Ghost(x, y, gColor, count){
 					distance = dist(this.pacX+1, this.pacY, targetX, targetY);
 					possiblePath = 1;
 				}
-				console.log(targetX+", "+targetY);
 				if (pacMap[this.pacY-1][this.pacX] > 0 && 
 						dist(this.pacX, this.pacY-1, targetX, targetY) < distance &&
 						this.previousPath != 3) {//up
