@@ -131,6 +131,7 @@ class Vertex {
         this.x = x;
         this.y = y;
         this.d = d;
+        this.angle = 0;
     }
 
     overlaps (o) {
@@ -165,3 +166,4 @@ class Body {
     }
 
 }
+

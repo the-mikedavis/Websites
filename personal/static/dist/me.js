@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    const svg = d3.select('svg'),
+    const svg = d3.select('svg#barchart'),
         margin = window.margin || {left: 40, right: 20, top: 20, bottom: 30};
 
     let height = svg.node().getBoundingClientRect().width,
