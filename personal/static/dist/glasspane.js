@@ -1,5 +1,7 @@
-if (getWidth() > 800) {
-    window.addEventListener('load', function () {
+if (getWidth() > 800)
+    window.addEventListener('load', polyize);
+
+function polyize () {
         const svg = d3.select('svg#glasspane').style('pointer-events', 'none'),
             node = svg.node().getBoundingClientRect(),
             width = node.width,
@@ -118,7 +120,6 @@ if (getWidth() > 800) {
             return !(x > 0 && x < width && y > 0 && y < height);
         }
 
-    });
 }
 
 class Vertex {
@@ -151,3 +152,13 @@ function getWidth () {
         width = w.innerWidth || e.clientWidth || g.clientWidth;
     return width;
 }
+
+
+window.addEventListener('resize', function () {
+    if (getWidth() < 800) {
+        d3.select('body').on('mousemove', null);
+        timer = null;
+    } else {
+        polyize();
+    }
+});
