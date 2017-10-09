@@ -9,10 +9,26 @@ body {
 
 div#description {
     width: 80%;
-    height: 200px;
+    min-height: 200px;
     margin: 0px 10%;
 }
 
 p {
     padding: 0px 10%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    text {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    text {
+        font-size: 50%;
+    }
+}
+
+svg#backbutton {
+    left: 0;
 }

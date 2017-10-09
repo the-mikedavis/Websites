@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
         .attr('height', width)
         .style('position', 'fixed')
         .style('top', '50px')
-        .style('left', '20px')
+        //.style('left', '20px')
         .style('cursor', 'pointer')
         .on('click', function () {
             window.history.back();
@@ -18,6 +18,7 @@ window.addEventListener('load', function () {
         {x1: .2 * width, x2: .5 * width, y1 : .5 * width, y2: .75 * width},
         {x1: .2 * width, x2: .9 * width, y1 : .5 * width, y2: .5 * width}
     ];
+
     svg.selectAll('line').data(data).enter()
         .append('line')
         .attr('x1', d => d.x1)

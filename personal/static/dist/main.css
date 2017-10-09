@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 800px) {
+@media screen and (min-width: 800px) {
     * {
         /*    border: 1px solid black;  */
     }
@@ -32,7 +32,7 @@
         bottom: 0;
         top: 0;
         left: 0;
-        width: 25%;
+        width: 330px;
     }
 
     h1 {
@@ -64,7 +64,7 @@
 }
 /*--------*/
 
-@media screen and (max-device-width: 799px) {
+@media screen and (max-width: 799px) {
     html {
         background-color: #222;
     }
@@ -77,24 +77,33 @@
         min-height: 100%;
     }
 
+    svg#glasspane {
+        display: none;
+    }
+
     nav {
         background-color: #fff;
-        height: 10%;
+        padding-top: 80px;
+        padding-right: auto;
+        padding-left: auto;
+        height: 20%;
+        width: 100%;
         font-family: "hack", monospace;
         font-size: 1.5em;
-        padding: 5% 0%;
-        position: fixed !important;
-        z-index: 99;
-        left: 0;
-        right: 0;
-        top: 0;
-        border-bottom: 1px solid black;
+        border-bottom: 100px solid #222;
     }
 
     h1 {
-        font-size: 80% !important;
+        font-size: 150% !important;
         padding: 1%;
-        display: none;
+        display: block;
+        width: 300px;
+        left: 0;
+        right: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: absolute;
+        top: 10px;
     }
 
     #glass {
@@ -111,8 +120,15 @@
 
     nav a {
         font-size: 100%;
+        width: auto;
         display: inline-block;
         padding: 1%;
-        margin: 0% 5%;
+        margin: 10px 10px 10px 20px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 992px) {
+    #glass {
+        width: 58.33333333%;
     }
 }

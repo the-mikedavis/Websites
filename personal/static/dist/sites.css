@@ -6,3 +6,13 @@ p, a, ol, ul {
     font-size: 20px;
 }
 
+@media screen and (min-width: 801px) {
+    svg#backbutton {
+        left: 20;
+    }
+}
+@media screen and (max-width: 800px) {
+    svg#backbutton {
+        left: 0;
+    }
+}

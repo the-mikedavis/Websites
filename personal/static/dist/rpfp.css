@@ -10,3 +10,7 @@ p {
     font-size: 20px;
     margin: 50px 0px;
 }
+
+svg#backbutton {
+    left: 0;
+}
