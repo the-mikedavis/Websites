@@ -69,7 +69,8 @@ module.exports = {
         "Ubuntu",
         "aspell",
         "Hex color system",
-        "ColorBrewer scales"
+        "ColorBrewer scales",
+        "Branching prediction failures",
     ].sort(), 
     want : [
         "Haskell",
@@ -82,7 +83,8 @@ module.exports = {
     not : [
         ".NET programming",
         "cmd",
-        "PowerShell"
+        "PowerShell",
+        "PHP"
     ].sort()
 };
 
