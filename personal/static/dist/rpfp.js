@@ -7,8 +7,8 @@ window.addEventListener('load', function () {
     let count = ri(8, 50);
     const data = new Array(count);
 
-    //  adjust the min, max radii for the aspect ratio and circle count
-    const maxr = (width * width) / (height * count),
+    //  adjust the min, max radii for the area and circle count
+    const maxr = 2 * Math.sqrt(width * height) / (count),
         minr = width / 50;
 
     data[0] = new Body(ri(5, width - 5), ri(5, height - 5),
