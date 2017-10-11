@@ -21,4 +21,9 @@ router.get('/rpfp', function (req, res) {
     res.render('rpfp.html');
 });
 
+//  added 10/11/17
+router.get('/raster', function (req, res) {
+    res.render('raster.html');
+});
+
 module.exports = router;
