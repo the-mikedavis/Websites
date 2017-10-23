@@ -4,3 +4,6 @@
 [submodule "personal/static/dist/raster"]
 	path = personal/static/dist/raster
 	url = git@github.com:the-mikedavis/raster.git
+[submodule "personal/static/dist/randompolygons"]
+	path = personal/static/dist/randompolygons
+	url = git@github.com:the-mikedavis/randompolygons.git
