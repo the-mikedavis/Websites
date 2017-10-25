@@ -71,6 +71,13 @@ module.exports = {
         "Hex color system",
         "ColorBrewer scales",
         "Branching prediction failures",
+        "Genetic Algorithms",
+        "Divide and Conquer Algorithms",
+        "Rasterizing vector graphics",
+        "Constraint Satisfaction Problems",
+        "Searching methods",
+        "Sorting methods",
+        "Event animation"
     ].sort(), 
     want : [
         "Haskell",

@@ -1,19 +1,19 @@
 [
     {
         "name": "Java",
-        "time": 140,
+        "time": 160,
         "color": "#b07219",
         "alias": "Jv"
     },
     {
         "name": "Procesing",
-        "time": 15,
+        "time": 30,
         "color": "#0096D8",
         "alias": "Pc"
     },
     {
         "name": "C",
-        "time": 2,
+        "time": 10,
         "color": "#555555"
     },
     {
@@ -41,13 +41,13 @@
     },
     {
         "name": "HTML",
-        "time": 80,
+        "time": 81,
         "color": "#e34c26",
         "alias": "HT"
     },
     {
         "name": "JavaScript",
-        "time": 355,
+        "time": 360,
         "color": "#f1e05a",
         "alias": "JS"
     },
@@ -71,7 +71,7 @@
     },
     {
         "name": "Markdown",
-        "time": 23,
+        "time": 25,
         "alias": "Md"
     }
 ]
