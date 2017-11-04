@@ -1,19 +1,19 @@
 [
     {
         "name": "Java",
-        "time": 160,
+        "time": 180,
         "color": "#b07219",
         "alias": "Jv"
     },
     {
         "name": "Procesing",
-        "time": 30,
+        "time": 40,
         "color": "#0096D8",
         "alias": "Pc"
     },
     {
         "name": "C",
-        "time": 10,
+        "time": 15,
         "color": "#555555"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
         "name": "Markdown",
-        "time": 25,
+        "time": 30,
         "alias": "Md"
     }
 ]
