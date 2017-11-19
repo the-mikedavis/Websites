@@ -1,15 +1,12 @@
 const express = require('express'),
-    projectcontent = require("./content/projectinfo"),
-    ai = require("./ai.js"),
+    aicontent = require("./content/ainfo"),
     router = express.Router();
 
-//  route to the ai router
-router.use('/ai', ai);
-
 router.get('/', function (req, res) {
-    res.render('projects.html', {content : projectcontent});
+    res.render('projects.html', {content : aicontent});
 });
 
+/*
 router.get('/attendance', function (req, res) {
     res.render('attendance.html')
 });
@@ -30,5 +27,11 @@ router.get('/rpfp', function (req, res) {
 router.get('/raster', function (req, res) {
     res.render('raster.html');
 });
+
+//  added 11/18/17
+router.get('/ai', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
+*/
 
 module.exports = router;
