@@ -27,4 +27,9 @@ router.get('/raster', function (req, res) {
     res.render('raster.html');
 });
 
+//  added 11/18/17
+router.get('/ai', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
+
 module.exports = router;

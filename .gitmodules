@@ -7,6 +7,3 @@
 [submodule "personal/static/dist/randompolygons"]
 	path = personal/static/dist/randompolygons
 	url = git@github.com:the-mikedavis/randompolygons.git
-[submodule "personal/static/dist/aiwalkthrough"]
-	path = personal/static/dist/aiwalkthrough
-	url = git@github.com:the-mikedavis/aiwalkthrough.git
