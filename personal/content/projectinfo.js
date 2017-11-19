@@ -31,7 +31,8 @@ module.exports = [
     },
     {
         title: "A Graphical Walkthrough to AI Concepts",
-        link: "/projects/ai",
+        //link: "/projects/ai",
+        link: '#',
         content: "For my CSC-545 AI class, I had a bunch of cool projects. What better way to show them off then to make them accessible through the web."
     }
 ];
