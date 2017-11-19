@@ -6,32 +6,24 @@ router.get('/', function (req, res) {
     res.render('projects.html', {content : aicontent});
 });
 
-/*
-router.get('/attendance', function (req, res) {
-    res.render('attendance.html')
-});
-
-router.get('/webdb', function (req, res) {
-    res.render('webdb.html');
-});
-
-router.get('/home-server', function (req, res) {
-    res.render('server.html');
-});
-
-router.get('/rpfp', function (req, res) {
-    res.render('rpfp.html');
-});
-
-//  added 10/11/17
-router.get('/raster', function (req, res) {
-    res.render('raster.html');
-});
-
-//  added 11/18/17
-router.get('/ai', function (req, res) {
+router.get('/uninformed', function (req, res) {
     res.render('ai.html', { mod : null });
 });
-*/
+
+router.get('/informed', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
+
+router.get('/genetic', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
+
+router.get('/csp', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
+
+router.get('/adversarial', function (req, res) {
+    res.render('ai.html', { mod : null });
+});
 
 module.exports = router;
