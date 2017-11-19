@@ -5,7 +5,10 @@ function polyize () {
         const svg = d3.select('svg#glasspane').style('pointer-events', 'none'),
             node = svg.node().getBoundingClientRect(),
             width = node.width,
-            height = node.height;
+            height = node.height,
+            idleTime = 3000;
+
+        let drawing = false;
 
         svg.each(function () {
             this.parentNode.appendChild(this);
@@ -18,17 +21,18 @@ function polyize () {
                     scrollNode = document.scrollingElement || document.documentElement,
                     x = coor[0],
                     y = coor[1] - scrollNode.scrollTop;
-                timer = setTimeout(function(){timeout(x, y)}, 1000);
+                timer = setTimeout(function(){timeout(x, y)}, idleTime);
             });
 
         let timer;
         const timeout = function (x, y) {
-            if (arguments.length === 0)
+            if (arguments.length === 0 || drawing)
                 return;
+            drawing = true;
             renderPoly(x, y, ri(3, 7));
         }
 
-        timer = setTimeout(timeout, 2000);
+        timer = setTimeout(timeout, idleTime);
 
         function renderPoly (x, y, sides) {
             let points = newPolyCoors(x, y, sides);
@@ -71,6 +75,7 @@ function polyize () {
                                 .transition().delay(500).duration(1000)
                                 .style('opacity', 0)
                                 .transition().remove();
+                            drawing = false;
                         });
                 });
         }
