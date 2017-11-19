@@ -28,5 +28,10 @@ module.exports = [
         title: "p5 Games",
         link: "/games",
         content: "Games in p5.js. This is a purely javascript engine which runs applications similar to what you might find with a flash player."
+    },
+    {
+        title: "A Graphical Walkthrough to AI Concepts",
+        link: "/projects/ai",
+        content: "For my CSC-545 AI class, I had a bunch of cool projects. What better way to show them off then to make them accessible through the web."
     }
 ];
