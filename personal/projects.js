@@ -1,5 +1,5 @@
 const express = require('express'),
-    projectcontent = require("./projectinfo"),
+    projectcontent = require("./content/projectinfo"),
     router = express.Router();
 
 router.get('/', function (req, res) {
