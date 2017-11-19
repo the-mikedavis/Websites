@@ -1,8 +1,9 @@
 const express = require('express'),
+    projectcontent = require("./projectinfo"),
     router = express.Router();
 
 router.get('/', function (req, res) {
-    res.render('projects.html');
+    res.render('projects.html', {content : projectcontent});
 });
 
 router.get('/attendance', function (req, res) {

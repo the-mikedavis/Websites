@@ -6,6 +6,14 @@
 {% endblock %}
 
 {% block body %}
+
+{% for item in content %}
+<h2><a class="large" href="{{item.link}}">{{ item.title }}</a></h2>
+<br>
+<p>{{item.content}}</p>
+<hr>
+{% endfor %}
+<!--
 <h2><a class="large" href="/projects/attendance">
         Headless Stack Overflow Daily Attendance</a></h2>
 <br>
@@ -51,4 +59,5 @@ database!</p>
 <p>Games in p5.js. This is a purely javascript engine which runs applications
 similar to what you might find with a flash player.</p>
 <hr>
+-->
 {% endblock %}
