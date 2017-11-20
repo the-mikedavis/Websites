@@ -7,23 +7,23 @@ router.get('/', function (req, res) {
 });
 
 router.get('/uninformed', function (req, res) {
-    res.render('ai.html', { mod : null });
+    res.render('ai.html', { mod : "uninformed" });
 });
 
 router.get('/informed', function (req, res) {
-    res.render('ai.html', { mod : null });
+    res.render('ai.html', { mod : "local" });
 });
 
 router.get('/genetic', function (req, res) {
-    res.render('ai.html', { mod : null });
+    res.render('ai.html', { mod : "genetic" });
 });
 
 router.get('/csp', function (req, res) {
-    res.render('ai.html', { mod : null });
+    res.render('ai.html', { mod : "csp" });
 });
 
 router.get('/adversarial', function (req, res) {
-    res.render('ai.html', { mod : null });
+    res.render('ai.html', { mod : "adversarial" });
 });
 
 module.exports = router;

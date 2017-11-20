@@ -2,11 +2,11 @@
 {% block title %}AI | Michael Davis{% endblock %}
 {% block head %}
     {{ super() }}
-    <script src="/dist/aiwalkthrough/aengine.js"></script>
     <script src="/dist/aiwalkthrough/{{mod}}/state.js"></script>
+    <script src="/dist/aiwalkthrough/aengine.js"></script>
     {% if mod == "local" %}
         <script src="/dist/priority-queue.min.js"></script>
-        <script src="/dist/randompolygons/javascript"></script>
+        <script src="/dist/randompolygons/javascript/rpg.js"></script>
     {% endif %}
 {% endblock %}
 
