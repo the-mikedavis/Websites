@@ -4,6 +4,10 @@
     {{ super() }}
     <script src="/dist/aiwalkthrough/aengine.js"></script>
     <script src="/dist/aiwalkthrough/{{mod}}/state.js"></script>
+    {% if mod == "local" %}
+        <script src="/dist/priority-queue.min.js"></script>
+        <script src="/dist/randompolygons/javascript"></script>
+    {% endif %}
 {% endblock %}
 
 {% block body %}
