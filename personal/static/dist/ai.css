@@ -1,0 +1,15 @@
+* {
+    font-family: 'hack', monospace;
+}
+
+p {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+hr {
+    margin-bottom: 50px;
+}

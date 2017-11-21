@@ -2,6 +2,7 @@
 {% block title %}AI | Michael Davis{% endblock %}
 {% block head %}
     {{ super() }}
+    <link rel="stylesheet" href="/dist/ai.css"></link>
     <script src="/dist/aiwalkthrough/{{mod}}/state.js"></script>
     <script src="/dist/aiwalkthrough/aengine.js"></script>
     {% if mod == "local" %}
@@ -12,10 +13,20 @@
 
 {% block body %}
 
+<h1>{{ content.title }}</h1>
+
+<hr>
+
 <svg id="aegus" width="100%" height="500px"></svg>
 
 <a onclick="aengine.next();">Next</a>
 <br>
-<a onclick="aengine.reset();">Reset</a.
+<a onclick="aengine.reset();">Reset</a>
+<br>
+<a onclick="aengine.solve();">Solve</a>
+
+<hr>
+
+<p>{{ content.content }}</p>
 
 {% endblock %}
