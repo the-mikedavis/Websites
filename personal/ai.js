@@ -1,6 +1,19 @@
 const express = require('express'),
     aicontent = require("./content/ainfo"),
+    marked = require('marked'),
+    fs = require('fs'),
     router = express.Router();
+
+const pathnames = [
+    "uninformed",
+    "local",
+    "genetic",
+    "csp",
+    "adversarial"
+];
+for (let i = 0; i < aicontent.length; i++)
+    aicontent[i].context = marked(fs.readFileSync(__dirname +
+        '/static/dist/aiwalkthrough/' + pathnames[i] + '/README.md', "utf8"));
 
 router.get('/', function (req, res) {
     res.render('projects.html', {content : aicontent});
