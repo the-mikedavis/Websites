@@ -7,7 +7,8 @@ const express = require('express'),
 router.use('/ai', ai);
 
 router.get('/', function (req, res) {
-    res.render('projects.html', {content : projectcontent});
+    res.render('projects.html', {content : projectcontent,
+        pagetitle: "Projects" });
 });
 
 router.get('/attendance', function (req, res) {

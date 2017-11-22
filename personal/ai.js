@@ -16,7 +16,7 @@ for (let i = 0; i < aicontent.length; i++)
         '/static/dist/aiwalkthrough/' + pathnames[i] + '/README.md', "utf8"));
 
 router.get('/', function (req, res) {
-    res.render('projects.html', {content : aicontent});
+    res.render('projects.html', {content : aicontent, pagetitle: "AI" });
 });
 
 router.get('/uninformed', function (req, res) {
