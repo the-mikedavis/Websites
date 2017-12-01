@@ -29,12 +29,13 @@ window.addEventListener('load', function () {
             .attr('cy', d => d.y)
             .attr('r', d => d.radius)
             .each(function (d) {
-                for (let i = 0; i < d.vertices.length; i++) {
+                const len = d.vertices.length;
+                for (let i = 0; i < len; i++) {
                     svg.append('line')
                         .attr('x1', d.vertices[i].x)
                         .attr('y1', d.vertices[i].y)
-                        .attr('x2', d.vertices[i + 1 == d.vertices.length ? 0 : i + 1].x)
-                        .attr('y2', d.vertices[i + 1 == d.vertices.length ? 0 : i + 1].y)
+                        .attr('x2', d.vertices[i + 1 % len].x)
+                        .attr('y2', d.vertices[i + 1 % len].y)
                         .attr('fill', 'none')
                         .attr('stroke', '#F00')
                         .attr('stroke-width', 1)
@@ -43,7 +44,7 @@ window.addEventListener('load', function () {
                         .attr('cy', d.vertices[i].y)
                         .attr('r', 2)
                         .attr('stroke-width', 0)
-                        .attr('fill', '#00F')
+                        .attr('fill', '#00F');
                 }
             });
     }

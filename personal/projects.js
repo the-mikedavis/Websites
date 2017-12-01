@@ -23,7 +23,7 @@ router.get('/home-server', function (req, res) {
     res.render('server.html');
 });
 
-router.get('/rpfp', function (req, res) {
+router.get('/poly', function (req, res) {
     res.render('rpfp.html');
 });
 

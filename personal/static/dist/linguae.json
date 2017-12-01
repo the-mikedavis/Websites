@@ -74,8 +74,9 @@
         "time": 40,
         "alias": "Md"
     },
+    {
         "name": "Clojure",
-        "time": 10,
+        "time": 20,
         "color": "#db5855",
         "alias": "Cj"
     }

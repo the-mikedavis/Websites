@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
         g = svg.append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    d3.json('dist/linguae.json', function (data) {
+    d3.json('/dist/linguae.json', function (data) {
 
         const largest = Math.max.apply(Math, data.map(function (e) {
                 return e.time;
