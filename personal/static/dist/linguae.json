@@ -13,7 +13,7 @@
     },
     {
         "name": "C",
-        "time": 20,
+        "time": 30,
         "color": "#555555"
     },
     {
@@ -21,23 +21,6 @@
         "time": 10,
         "color": "#3572A5",
         "alias": "Py"
-    },
-    {
-        "name": "Go",
-        "time": 1,
-        "color": "#375eab"
-    },
-    {
-        "name": "Ruby",
-        "time": 3,
-        "color": "#701516",
-        "alias": "Rb"
-    },
-    {
-        "name": "Brainfuck",
-        "time": 2,
-        "color": "#2F2530",
-        "alias": "Bf"
     },
     {
         "name": "HTML",
@@ -62,12 +45,6 @@
         "time": 25,
         "color": "#89e051",
         "alias": "Sh"
-    },
-    {
-        "name": "TeX",
-        "time": 5,
-        "color": "#3D6117",
-        "alias": "TX"
     },
     {
         "name": "Markdown",
