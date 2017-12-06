@@ -48,7 +48,6 @@ module.exports = {
         "cron jobs",
         "Common network ports",
         "Basic TCP",
-        "HEIST network attacks",
         "RESTful applications",
         "RESTful applications",
         "The Web API",
@@ -77,7 +76,11 @@ module.exports = {
         "Constraint Satisfaction Problems",
         "Searching methods",
         "Sorting methods",
-        "Event animation"
+        "Event animation",
+        "Slack API",
+        "Web-scraping",
+        "Concurrency",
+        "Asynchronous Programming"
     ].sort(), 
     want : [
         "Haskell",

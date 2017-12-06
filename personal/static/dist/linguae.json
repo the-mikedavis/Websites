@@ -13,7 +13,7 @@
     },
     {
         "name": "C",
-        "time": 30,
+        "time": 40,
         "color": "#555555"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
         "name": "Clojure",
-        "time": 20,
+        "time": 42,
         "color": "#db5855",
         "alias": "Cj"
     }
