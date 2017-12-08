@@ -4,7 +4,7 @@ const express = require('express'),
     router = express.Router();
 
 //  route to the ai router
-router.use('/ai', ai);
+//router.use('/ai', ai);
 
 router.get('/', function (req, res) {
     res.render('projects.html', {content : projectcontent,
