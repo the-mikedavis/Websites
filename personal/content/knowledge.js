@@ -56,7 +56,7 @@ module.exports = {
         "TeXmaker",
         "State Diagrams",
         "Basic Computer Architecture",
-        "Dvorak Touch Typing (~75 wpm)",
+        "Dvorak Touch Typing (~95 wpm)",
         "Mechanics (Physics)",
         "How to install Linux",
         "The apt(-get) package manager",
@@ -64,7 +64,6 @@ module.exports = {
         "MongoDB",
         "tor",
         "torsocks (torify)",
-        "init.d",
         "Ubuntu",
         "aspell",
         "Hex color system",
@@ -80,10 +79,12 @@ module.exports = {
         "Slack API",
         "Web-scraping",
         "Concurrency",
-        "Asynchronous Programming"
+        "Asynchronous Programming",
+        "Robot Operating System"
     ].sort(), 
     want : [
         "Haskell",
+        "Elixir",
         "JSON Encryption",
         "HTTP Version 2",
         "Ruby on Rails",
