@@ -85,6 +85,7 @@ module.exports = {
     want : [
         "Haskell",
         "Elixir",
+        "Scala",
         "JSON Encryption",
         "HTTP Version 2",
         "Ruby on Rails",
