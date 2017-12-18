@@ -6,8 +6,9 @@ module.exports = [
         context: "This example is of the famous AI toy problem: Missionaries and Cannibals."
     },
     {
-        title: "Part II: Informed Search",
-        link: "/projects/ai/informed",
+        title: "Part II: Informed Search (coming soon)",
+        //link: "/projects/ai/informed",
+        link: "#",
         content: "Informed Search uses inferences about the solution to point the search in its direction.",
         context: ""
     },
@@ -24,8 +25,9 @@ module.exports = [
         context: ""
     },
     {
-        title: "Part V: Adversarial Search",
-        link: "/projects/ai/adversarial",
+        title: "Part V: Adversarial Search (coming soon)",
+        //link: "/projects/ai/adversarial",
+        link: "#",
         content: "Games like Tic-Tac-Toe and Chess use search much more than you might think. The strategies used in these games can help us solve problems like automated driving and diplomacy.",
         context: ""
     }
