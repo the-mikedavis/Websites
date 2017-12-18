@@ -3,7 +3,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="/dist/ai.css"></link>
-    <script src="/dist/aiwalkthrough/dist/{{mod}}.js"></script>
+    <script src="/dist/aiwalkthrough/src/{{mod}}/state.js"></script>
     <script src="/dist/aiwalkthrough/src/aengine.js"></script>
     {% if mod == "local" %}
         <script src="/dist/priority-queue.min.js"></script>
