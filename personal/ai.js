@@ -11,6 +11,7 @@ const pathnames = [
     "csp",
     "adversarial"
 ];
+
 for (let i = 0; i < aicontent.length; i++)
     aicontent[i].context = marked(fs.readFileSync(__dirname +
         '/static/dist/aiwalkthrough/src/' + pathnames[i] + '/README.md', 
