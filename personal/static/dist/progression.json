@@ -74,7 +74,7 @@
                     {
                         "name": "I.",
                         "grade": "-",
-                        "description": "Independent Study with Professor Zevesuy Rodriguez. We work together to create museum/exhibit style displays like a sound based high striker game.",
+                        "description": "Independent Study with Professor Zevesuy Rodriguez. We work together to create museum/exhibit style displays like a sound based high striker game, and a Unity drawing app with the Leap Motion. This replaces CIM 111, which is an intro to web development course.",
                         "prereq": null
                     },
                     {
@@ -104,10 +104,10 @@
                 ],
                 [
                     {
-                        "name": "CIM-593",
+                        "name": "CIM-594",
                         "grade": "-",
-                        "description": "Websites with Dynamic Data. This course teaches data analysis through the development of interactive web applications. The course focuses on communicating through computer programming. Students will learn to build and use databases as a primary source and explore data as content. For this course students will be required to build custom software solutions through web programming languages that utilize third party APIs to interpret, analyze and manipulate data.",
-                        "prereq": ["CIM-111"]
+                        "description": "Front End Development. Use languages like Sass and Less to create beautiful front ends.",
+                        "prereq": null
                     },
                     {
                         "name": "CIM-542",
@@ -116,10 +116,10 @@
                         "prereq": null
                     },
                     {
-                        "name": "CSC-424",
+                        "name": "IEN-505",
                         "grade": "-",
-                        "description": "Computer Networks. Introduction to computer networks and network applications. The protocol stack. Routing, switching and bridging technologies. Models of network computing. Internet standards and protocols.",
-                        "prereq": ["CSC-322", "CSC-314"]
+                        "description": "Robotics. Fundamentals of robotics including kinematics and dynamics, trajectory planning, sensors and actuators, robotic vision, and case studies. Building your own robot is an integral part of hands-on laboratory exercises. Matlab controltoolbox and image analysis toolbox will be extensively used for design and analysis.",
+                        "prereq": ["IEN-406"]
                     },
                     {
                         "name": "CSC-427",
@@ -128,10 +128,16 @@
                         "prereq": ["CSC-220", "MTH-309"]
                     },
                     {
-                        "name": "GSC-107",
+                        "name": "CSC-419",
                         "grade": "-",
-                        "description": "Natural Disasters. This course will explore the causes, effects and societal responses to disasters. We will look at a variety of natural hazards and related disasters including flooding, volcanoes, landslides, earthquakes, hurricanes, tsunami and drought. Using excerpted segments of \"disaster films\" in conjunction with scientific treatments, we can identify the causes, frequency, consequences, risks, and public perceptions of natural hazards.",
-                        "prereq": null
+                        "description": "Programming Languagues. Overview of programming languages. Fundamental issues in language design. Virtual machines. Introduction to language translation. Models of execution control. Declaration, modularity, and storage management. Programming language semantics. Programming paradigms.",
+                        "prereq": ["CSC-317"]
+                    },
+                    {
+                        "name": "CSC-431",
+                        "grade": "-",
+                        "description": "Software Engineering. Software processes, requirements and specifications, design, validation, evolution. Project management, tools and environments. Foundations of human-computer interaction. Risks and liabilities of computer-based systems. Intellectual property.",
+                        "prereq": ["CSC-317", "CSC-322"]
                     }
                 ]
             ]
@@ -152,16 +158,10 @@
                         "prereq": ["MTH-161"]
                     },
                     {
-                        "name": "CSC-419",
+                        "name": "CSC-424",
                         "grade": "-",
-                        "description": "Programming Languages. Overview of programming languages. Fundamental issues in language design. Virtual machines. Introduction to language translation. Models of execution control. Declaration, modularity, and storage management. Programming language semantics. Programming paradigms.",
-                        "prereq": ["CSC-317"]
-                    },
-                    {
-                        "name": "CSC-431",
-                        "grade": "-",
-                        "description": "Software Engineering. Software processes, requirements and specifications, design, validation, evolution. Project management, tools and environments. Foundations of human-computer interaction. Risks and liabilities of computer-based systems. Intellectual property.",
-                        "prereq": ["CSC-317"]
+                        "description": "Introduction to computer networks and network applications. The protocol stack. Routing, switching and bridging technologies. Models of network computing. Internet standards and protocols.",
+                        "prereq": ["CSC-314", "CSC-322"]
                     },
                     {
                         "name": "CSC-421",
@@ -184,9 +184,9 @@
                         "prereq": ["CSC-220", "MTH-210"]
                     },
                     {
-                        "name": "",
-                        "grade": "",
-                        "description": "",
+                        "name": "GSC-107",
+                        "grade": "-",
+                        "description": "This course will explore the causes, effects and societal responses to disasters. We will look at a variety of natural hazards and related disasters including flooding, volcanoes, landslides, earthquakes, hurricanes, tsunami and drought. Using excerpted segments of \"disaster films\" in conjunction with scientific treatments, we can identify the causes, frequency, consequences, risks, and public perceptions of natural hazards.",
                         "prereq": null
                     }
                 ]
