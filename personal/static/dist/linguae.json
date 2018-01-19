@@ -17,41 +17,47 @@
     },
     {
         "name": "Python",
-        "time": 18,
+        "time": 20,
         "color": "#3572A5",
         "alias": "py"
     },
     {
         "name": "HTML",
-        "time": 82,
+        "time": 90,
         "color": "#e34c26"
     },
     {
         "name": "JavaScript",
-        "time": 370,
+        "time": 400,
         "color": "#f1e05a",
         "alias": "JS"
     },
     {
         "name": "CSS",
-        "time": 30,
+        "time": 32,
         "color": "#563d7c"
     },
     {
         "name": "Shell",
-        "time": 25,
+        "time": 28,
         "color": "#89e051",
         "alias": "sh"
     },
     {
         "name": "Markdown",
-        "time": 40,
+        "time": 50,
         "alias": "md"
     },
     {
         "name": "Clojure",
-        "time": 50,
+        "time": 60,
         "color": "#db5855",
         "alias": "clj"
+    },
+    {
+        "name": "Elixir",
+        "time": 12,
+        "color": "#6e4a7e",
+        "alias": "ex"
     }
 ]
