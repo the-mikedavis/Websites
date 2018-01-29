@@ -1,7 +1,7 @@
 [
     {
         "name": "Java",
-        "time": 190,
+        "time": 200,
         "color": "#b07219"
     },
     {
@@ -12,7 +12,7 @@
     },
     {
         "name": "C",
-        "time": 40,
+        "time": 42,
         "color": "#555555"
     },
     {
@@ -45,18 +45,18 @@
     },
     {
         "name": "Markdown",
-        "time": 50,
+        "time": 60,
         "alias": "md"
     },
     {
         "name": "Clojure",
-        "time": 60,
+        "time": 65,
         "color": "#db5855",
         "alias": "clj"
     },
     {
         "name": "Elixir",
-        "time": 12,
+        "time": 30,
         "color": "#6e4a7e",
         "alias": "ex"
     }
